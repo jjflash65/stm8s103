@@ -1,0 +1,1 @@
+sdcc -lstm8 -mstm8 -c --std-c99 --opt-code-size --disable-warning 197 --disable-warning 84 --disable-warning 185 -DF_CPU=16000000 -I../include/ dht_test.c -o dht_test.rel
