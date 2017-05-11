@@ -1,0 +1,7 @@
+These are the original specifications from Atmel. The software
+was written from scratch using those documents:
+AVR068.zip
+stk500_spec_AVR068.pdf
+
+This is a trace log from a real stk500:
+CommunicationLogFromRealSTK500.txt

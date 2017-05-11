@@ -1,0 +1,58 @@
+#!/bin/sh 
+prg="adude"
+uc="m8"
+port=/dev/ttyUSB0
+help()
+{
+	echo "prg_load_uc -- load a .hex file into a atmega8 microcontroller"
+	echo ""
+	echo "Usage: prg_load_uc [-hu][-m uC] File.hex"
+	echo ""
+	echo "OPTIONS: -h this help"
+        echo "         -m select a uC differnt from m8"
+	echo "         -u use uisp instead of avrdude"
+	echo "            avrdude can automatically detect dapa or avrusb500."
+	echo "            uisp can only be used with the parallel port dapa."
+	echo ""
+	echo "This script can be easily adapted to different programmer types"
+	exit 0
+}
+
+[ -z "$1" ] && help
+
+while [ -n "$1" ]; do
+case $1 in
+    -h) help;shift 1;;
+    -u) prg="uisp";shift 1;;
+    -m) opt_m="1";uc="$2";shift 2;;
+    -*) echo "error: no such option $1. -h for help";exit 1;;
+    *)  break;;
+esac
+done
+
+pfile="$1"
+
+if [ "$prg" = "uisp" ]; then
+	set -x
+	uisp -dlpt=/dev/parport0 --erase  -dprog=dapa
+	uisp -dlpt=/dev/parport0 --upload if="$pfile" -dprog=dapa  -v=3 --hash=32 --verify
+	set +x
+fi
+if [ "$prg" = "adude" ]; then
+	prg="dapa"
+	if grep "Vendor=0403 ProdID=6001" /proc/bus/usb/devices > /dev/null ; then
+		prg="avrusb500"
+	fi
+	#if grep "Vendor=10c4 ProdID=ea60" /proc/bus/usb/devices > /dev/null ; then
+	#	prg="avrusb500smd"
+	#fi
+	if [ "$prg" = "dapa" ]; then
+		set -x
+		avrdude -p $uc -c $prg -e -U flash:w:"$pfile"
+		set +x
+	else
+		set -x
+		avrdude -p $uc -P $port -c $prg -e -U flash:w:"$pfile"
+		set +x
+	fi
+fi

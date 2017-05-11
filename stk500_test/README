@@ -1,0 +1,214 @@
+avrusb500 is a modern stk500 protocol compatible programer
+for Linux, Mac, Windows ... (and more).
+
+http://tuxgraphics.org/electronics
+
+1) Hardware
+-----------
+The circuit diagram can be found in the hw/ directory
+
+2) Compile
+----------
+You need a avr-gcc installation with avrlibc-1.2.X
+
+To compile all software including hardware test programs
+type the command:
+
+make
+
+4) BitBang loading of firmware
+------------------------------
+Note: If you have ordered the avrusb500 kit from http://shop.tuxgraphics.org
+then you can skip this step. Everything is already installed on the CD.
+
+Loading of firmware is done under Linux only. The programer
+is OS independent once you have loaded the firmware.
+
+You can either use the pre-compiled uisp_ppbg binary from bin/
+or build it from sources:
+- install libusb http://libusb.sourceforge.net
+- install uisp-20050207.tar.gz + uisp-20050207-usb-bbpg-patch.txt
+  or install uisp-20050207-usb-bbpg.tar.gz
+- copy the file called uisp into this directory and name it uisp_ppbg
+- become root and execute the make load* commands (see further down)
+
+
+3) Testing
+----------
+The hardware is tested in 3 steps:
+
+3a - connect avrusb500 to the usb port of your Linux PC and 
+     type 
+     more /proc/bus/usb/devices
+
+     Search in this text for "Vendor=0403 ProdID=6001".
+     If it is there then the USB part is working.
+     If not check soldering and parts for the ftdi chip. A common
+     mistake is to swap the D+/D- cables on the usb port.
+
+3b - connect the little programmer bridge cable between CONN1 and CONN4
+     (correct polarity please!) and execute the command:
+
+     make load_test_1
+
+     Note: this command needs to be executed as root unless you use
+     the avr programming CD from http://shop.tuxgraphics.org
+
+     The LED on the board should start to blink.
+
+3c - This test has only limited added value compared to 3b. Allmost
+     all functionallity is already tested if 3a and 3b were passed. You can
+     skip this test if you want.
+     For the test connect the little programmer bridge cable between CONN1 and CONN4
+     (correct polarity please!) and execute the commands:
+
+     make ttydevinit1152
+     make load_test_2
+
+     Note: the second command needs to be executed as root unless you use
+     the avr programming CD from http://shop.tuxgraphics.org
+
+     Remove the usb connector and plug it back in. Run the following
+     command to see that the ftdi_sio module is loaded:
+     /sbin/lsmod | grep ftdi
+
+     If it is not loaded then execute the command (as root):
+     modprobe ftdi_sio
+
+     execute the commands:
+
+     ./ttydevinit1152 /dev/usb/tts/0
+     or (dependent on your Linux distribution):
+     ./ttydevinit1152 /dev/ttyUSB0
+
+     Open two shell windows (e.g xterm or Konsole) and execute in
+
+     shell 1:
+     cat /dev/ttyUSB0      
+     (or cat /dev/usb/tts/0 but that is obvious, I guess...)
+
+     in shell 2:
+     cat > /dev/ttyUSB0
+
+     In shell 2 you type now:
+     1
+     In shell 1 you should see now the text "on OK" and the LED should go on.
+
+     In shell 2 you type:
+     0
+     and in shell 1 you should see now the text "off OK" ... and the LED 
+     should go off.
+
+     You can terminate the cat commands with crtl-c.
+
+
+4) Loading the final firmware
+-----------------------------
+After successful testing of the hardware (step 3) you can now load the final
+firmware:
+
+make load
+
+This command is rather slow and will take about 40 minutes to 
+complete (run it over lunch time). The loading is a bit faster
+on a PC with USB 2.0.
+You will need to do this firmware loading only once. After this step
+you have a fast and modern AVR programmer.
+
+The command "make load" will load the file avrusb500.hex into
+the atmega8. There is also a file avrusb500_pre.hex which can be loaded
+in case you do not have a working avr-gcc compiler.
+
+Optional: Setting to SW version to keep avrstudio quiet
+-------------------------------------------------------
+A good serial terminal for Linux is gtkterm 
+  http://www.jls-info.com/julien/linux/
+
+Under windows you can use Hyperterminal
+
+To talk to the avrusb500 in terminal mode you have to
+attach your serial terminal to the com port (Linux /dev/ttyUSB0)
+with the following settings: 
+ Speed=115200 Parity=none Bits=8 Stopbits=1 Flow=none
+
+Note to windows users: Hyperterminal crashes/hangs if you set Flowcontrol
+accidently not to none.
+
+Hit twice return and then you get a dialog on the screen
+similar to this one (in this example we change ver=2.2 to ver=2.1):
+
+	AvrUsb500 terminal mode
+	Enter SW Version Major [2]: 2
+	Enter SW Version Minor [2]: 1
+
+	OK, my SW version is now: 2.1
+	Ready. Just close the terminal. No reset needed.
+
+An alternative to gtkterm is under linux also the ttydevinit1152 command included 
+in this package:
+Open 2 xterm windows. In one you type 
+./ttydevinit1152 /dev/ttyUSB0
+cat /dev/ttyUSB0
+
+The other you use as input window (put mouse focus on it):
+cat > /dev/ttyUSB0
+
+
+Change history
+--------------
+2005-09-30:  avrusb500-0.6 first public version
+2005-10-18:  avrusb500-0.7, minor editorial updates in the circuit diagram
+2005-11-28:  avrusb500-0.8, Circuit diagram updated R11 and R13 changed from 220 to 1K
+                            (220 Ohm works also for works also for low voltage 
+			    targets [2.7V] but 1K might be better)
+2005-12-29:  avrusb500-0.9, Update this README
+                            Frequencies not correctly set in spi.c (the impact of
+			    this fault to the end user is almost none)
+2006-01-07:  avrusb500-1.0, - Missing dependency in makefile.
+                            - Timeout protection against possible hanging during 
+			      polling (main.c)
+			    - Restore mode during word writing (solves problem with 
+			      timeout during programming of a at90s2313 chip)         
+2006-03-04:  avrusb500-1.1, - Updates for gcc-4.0.X (previous version would not
+                              work very well with the new compiler)
+			    - Added terminal mode to change SW version number.
+			      This feature was contributed by Florin-Viorel Petrov
+			      and is mainly interessting for users of the
+			      avrstudio software to avoid the "update SW" dialog.
+2006-03-10:  avrusb500-1.2, - Support for 2 digit version numbers
+                            - Faults in timeout.c corrected
+
+2006-04-08:  avrusb500-1.3, - Added support for some STK500 only parameters
+                            - The second test program echos all input as
+			      Hex values back.
+			    - Fix for a problem reported by Magne Hellum: pull spi pins
+			      to ground at spi-init.
+
+2006-05-28:  avrusb500-1.4, - Add read delays for short commands
+                            - Supervise the communication also with the watchdog
+			    - Add slow programming mode. You get there if you use
+			    the avrdude -B 10 option. This is useful to recover targets
+			    with extremely low clock speed (atmega88/atmega168 can work
+			    with clock dvision factors up to 256).
+
+2006-11-06:  avrusb500-1.5, - enter version number in hex
+                            - clock sck during the sync loops of CMD_ENTER_PROGMODE_ISP
+			      This solves a problem when programming a tiny2313 where
+			      port B is used for applications.
+
+2007-05-13:  avrusb500-1.6, - set PARAM_TOPCARD_DETECT to 0x8c for
+                              interworking with CodeVision (contrib by Erik Lins)
+
+2007-11-24:  avrusb500-1.7, - Fix 64K flash bug, thanks to Andrzej Wolski
+
+Author/Copyright/Links
+----------------------
+Guido Socher (guido [At] tuxgraphics.org)
+
+Idea for terminal mode by Florin-Viorel Petrov.
+64K word flash addressing by Andrzej Wolski
+
+Copyright: GPLv2 (see http://www.gnu.org/licenses/gpl.html )
+Homepage of the avrusb500: 
+    http://tuxgraphics.org/electronics/200510/article05101.shtml
+

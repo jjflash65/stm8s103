@@ -1,0 +1,850 @@
+;--------------------------------------------------------
+; File Created by SDCC : free open source ANSI-C Compiler
+; Version 3.5.0 #9253 (Aug 12 2015) (Linux)
+; This file was generated Mon Sep  5 17:30:35 2016
+;--------------------------------------------------------
+	.module ds1307_demo
+	.optsdcc -mstm8
+	
+;--------------------------------------------------------
+; Public variables in this module
+;--------------------------------------------------------
+	.globl _main
+	.globl _ds1307_init
+	.globl _ds1307_settime
+	.globl _ds1307_readtime
+	.globl _dez2bcd
+	.globl _bcd2dez
+	.globl _ds1307_write
+	.globl _ds1307_read
+	.globl _digit4_init
+	.globl _digit4_clrdp
+	.globl _digit4_setdp
+	.globl _digit4_setall
+	.globl _digit4_sethex
+	.globl _digit4_setdez
+	.globl _i2c_read_nack
+	.globl _i2c_write
+	.globl _i2c_stop
+	.globl _i2c_start
+	.globl _i2c_init
+	.globl _delay_ms
+	.globl _sysclock_init
+	.globl _year
+	.globl _month
+	.globl _day
+	.globl _dow
+	.globl _sek
+	.globl _min
+	.globl _std
+;--------------------------------------------------------
+; ram data
+;--------------------------------------------------------
+	.area DATA
+_std::
+	.ds 1
+_min::
+	.ds 1
+_sek::
+	.ds 1
+_dow::
+	.ds 1
+_day::
+	.ds 1
+_month::
+	.ds 1
+_year::
+	.ds 1
+;--------------------------------------------------------
+; ram data
+;--------------------------------------------------------
+	.area INITIALIZED
+;--------------------------------------------------------
+; Stack segment in internal ram 
+;--------------------------------------------------------
+	.area	SSEG
+__start__stack:
+	.ds	1
+
+;--------------------------------------------------------
+; absolute external ram data
+;--------------------------------------------------------
+	.area DABS (ABS)
+;--------------------------------------------------------
+; interrupt vector 
+;--------------------------------------------------------
+	.area HOME
+__interrupt_vect:
+	int s_GSINIT ;reset
+	int 0x0000 ;trap
+	int 0x0000 ;int0
+	int 0x0000 ;int1
+	int 0x0000 ;int2
+	int 0x0000 ;int3
+	int 0x0000 ;int4
+	int 0x0000 ;int5
+	int 0x0000 ;int6
+	int 0x0000 ;int7
+	int 0x0000 ;int8
+	int 0x0000 ;int9
+	int 0x0000 ;int10
+	int 0x0000 ;int11
+	int 0x0000 ;int12
+	int _tim2_ovf ;int13
+	int 0x0000 ;int14
+	int 0x0000 ;int15
+	int 0x0000 ;int16
+	int 0x0000 ;int17
+	int 0x0000 ;int18
+	int 0x0000 ;int19
+	int 0x0000 ;int20
+	int 0x0000 ;int21
+	int 0x0000 ;int22
+	int 0x0000 ;int23
+	int 0x0000 ;int24
+	int 0x0000 ;int25
+	int 0x0000 ;int26
+	int 0x0000 ;int27
+	int 0x0000 ;int28
+	int 0x0000 ;int29
+;--------------------------------------------------------
+; global & static initialisations
+;--------------------------------------------------------
+	.area HOME
+	.area GSINIT
+	.area GSFINAL
+	.area GSINIT
+__sdcc_gs_init_startup:
+__sdcc_init_data:
+; stm8_genXINIT() start
+	ldw x, #l_DATA
+	jreq	00002$
+00001$:
+	clr (s_DATA - 1, x)
+	decw x
+	jrne	00001$
+00002$:
+	ldw	x, #l_INITIALIZER
+	jreq	00004$
+00003$:
+	ld	a, (s_INITIALIZER - 1, x)
+	ld	(s_INITIALIZED - 1, x), a
+	decw	x
+	jrne	00003$
+00004$:
+; stm8_genXINIT() end
+	.area GSFINAL
+	jp	__sdcc_program_startup
+;--------------------------------------------------------
+; Home
+;--------------------------------------------------------
+	.area HOME
+	.area HOME
+__sdcc_program_startup:
+	jp	_main
+;	return from main will return to caller
+;--------------------------------------------------------
+; code
+;--------------------------------------------------------
+	.area CODE
+;	ds1307_demo.c: 54: uint8_t ds1307_read(uint8_t addr)
+;	-----------------------------------------
+;	 function ds1307_read
+;	-----------------------------------------
+_ds1307_read:
+	push	a
+;	ds1307_demo.c: 59: i2c_start();
+	call	_i2c_start
+;	ds1307_demo.c: 60: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 61: i2c_write(ds1307_addr);
+	push	#0xd0
+	call	_i2c_write
+	pop	a
+;	ds1307_demo.c: 62: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 63: i2c_write(addr);
+	ld	a, (0x04, sp)
+	push	a
+	call	_i2c_write
+	pop	a
+;	ds1307_demo.c: 65: i2c_start();
+	call	_i2c_start
+;	ds1307_demo.c: 66: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 67: i2c_write(ds1307_addr | 1);
+	push	#0xd1
+	call	_i2c_write
+	pop	a
+;	ds1307_demo.c: 68: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 69: value= i2c_read_nack();
+	call	_i2c_read_nack
+	ld	(0x01, sp), a
+;	ds1307_demo.c: 70: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 71: i2c_stop();
+	call	_i2c_stop
+;	ds1307_demo.c: 72: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 74: return value;
+	ld	a, (0x01, sp)
+	addw	sp, #1
+	ret
+;	ds1307_demo.c: 86: void ds1307_write(uint8_t addr, uint8_t value)
+;	-----------------------------------------
+;	 function ds1307_write
+;	-----------------------------------------
+_ds1307_write:
+;	ds1307_demo.c: 89: i2c_start();
+	call	_i2c_start
+;	ds1307_demo.c: 90: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 91: i2c_write(ds1307_addr);
+	push	#0xd0
+	call	_i2c_write
+	pop	a
+;	ds1307_demo.c: 93: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 94: i2c_write(addr);
+	ld	a, (0x03, sp)
+	push	a
+	call	_i2c_write
+	pop	a
+;	ds1307_demo.c: 95: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 97: i2c_write(value);
+	ld	a, (0x04, sp)
+	push	a
+	call	_i2c_write
+	pop	a
+;	ds1307_demo.c: 98: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 100: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+	ret
+;	ds1307_demo.c: 111: uint8_t bcd2dez(uint8_t value)
+;	-----------------------------------------
+;	 function bcd2dez
+;	-----------------------------------------
+_bcd2dez:
+	push	a
+;	ds1307_demo.c: 113: return (((value >> 4) * 10) + (value & 0x0f)) ;
+	ld	a, (0x04, sp)
+	swap	a
+	and	a, #0x0f
+	exg	a, xl
+	ld	a, #0x0a
+	exg	a, xl
+	mul	x, a
+	ld	a, (0x04, sp)
+	and	a, #0x0f
+	ld	(0x01, sp), a
+	ld	a, xl
+	add	a, (0x01, sp)
+	addw	sp, #1
+	ret
+;	ds1307_demo.c: 123: uint8_t dez2bcd(uint8_t value)
+;	-----------------------------------------
+;	 function dez2bcd
+;	-----------------------------------------
+_dez2bcd:
+	sub	sp, #2
+;	ds1307_demo.c: 127: hiz= value / 10;
+	clrw	x
+	ld	a, (0x05, sp)
+	ld	xl, a
+	ld	a, #0x0a
+	div	x, a
+;	ds1307_demo.c: 128: loz= (value -(hiz*10));
+	pushw	x
+	ld	a, #0x0a
+	mul	x, a
+	exg	a, xl
+	ld	(0x04, sp), a
+	exg	a, xl
+	popw	x
+	ld	a, (0x05, sp)
+	sub	a, (0x02, sp)
+	ld	(0x01, sp), a
+;	ds1307_demo.c: 129: c= (hiz << 4) | loz;
+	ld	a, xl
+	swap	a
+	and	a, #0xf0
+	or	a, (0x01, sp)
+;	ds1307_demo.c: 130: return c;
+	addw	sp, #2
+	ret
+;	ds1307_demo.c: 140: void ds1307_readtime(void)
+;	-----------------------------------------
+;	 function ds1307_readtime
+;	-----------------------------------------
+_ds1307_readtime:
+;	ds1307_demo.c: 143: sek= ds1307_read(0) & 0x7f;
+	push	#0x00
+	call	_ds1307_read
+	addw	sp, #1
+	and	a, #0x7f
+	ld	_sek+0, a
+;	ds1307_demo.c: 144: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 146: min= ds1307_read(1) & 0x7f;
+	push	#0x01
+	call	_ds1307_read
+	addw	sp, #1
+	and	a, #0x7f
+	ld	_min+0, a
+;	ds1307_demo.c: 147: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 149: std= ds1307_read(2) & 0x3f;
+	push	#0x02
+	call	_ds1307_read
+	addw	sp, #1
+	and	a, #0x3f
+	ld	_std+0, a
+;	ds1307_demo.c: 150: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 152: day= ds1307_read(4) & 0x3f;
+	push	#0x04
+	call	_ds1307_read
+	addw	sp, #1
+	and	a, #0x3f
+	ld	_day+0, a
+;	ds1307_demo.c: 153: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 155: month= ds1307_read(5) & 0x1f;
+	push	#0x05
+	call	_ds1307_read
+	addw	sp, #1
+	and	a, #0x1f
+	ld	_month+0, a
+;	ds1307_demo.c: 156: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 158: year= ds1307_read(6);
+	push	#0x06
+	call	_ds1307_read
+	addw	sp, #1
+	ld	_year+0, a
+;	ds1307_demo.c: 159: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+	ret
+;	ds1307_demo.c: 167: void ds1307_settime(uint8_t year, uint8_t month, uint8_t day, uint8_t std, uint8_t min, uint8_t sek)
+;	-----------------------------------------
+;	 function ds1307_settime
+;	-----------------------------------------
+_ds1307_settime:
+;	ds1307_demo.c: 169: ds1307_write(2,std);                    // Stunde
+	ld	a, (0x06, sp)
+	push	a
+	push	#0x02
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 170: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 171: ds1307_write(1,min);                    // Minute
+	ld	a, (0x07, sp)
+	push	a
+	push	#0x01
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 172: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 173: ds1307_write(0,sek);                    // Sekunde
+	ld	a, (0x08, sp)
+	push	a
+	push	#0x00
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 174: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 175: ds1307_write(4,day);                    // Tag
+	ld	a, (0x05, sp)
+	push	a
+	push	#0x04
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 176: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 177: ds1307_write(5,month);                  // Monat
+	ld	a, (0x04, sp)
+	push	a
+	push	#0x05
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 178: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 179: ds1307_write(6,year);                   // Jahr
+	ld	a, (0x03, sp)
+	push	a
+	push	#0x06
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 180: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+	ret
+;	ds1307_demo.c: 193: int ds1307_init(void)
+;	-----------------------------------------
+;	 function ds1307_init
+;	-----------------------------------------
+_ds1307_init:
+	push	a
+;	ds1307_demo.c: 198: i2c_init(2);
+	push	#0x02
+	call	_i2c_init
+	pop	a
+;	ds1307_demo.c: 199: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 202: i2c_start();
+	call	_i2c_start
+;	ds1307_demo.c: 203: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 204: ack= i2c_write(ds1307_addr);
+	push	#0xd0
+	call	_i2c_write
+	addw	sp, #1
+	ld	(0x01, sp), a
+;	ds1307_demo.c: 205: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 206: i2c_stop();
+	call	_i2c_stop
+;	ds1307_demo.c: 207: if (!ack) return 0;
+	tnz	(0x01, sp)
+	jrne	00102$
+	clrw	x
+	jra	00103$
+00102$:
+;	ds1307_demo.c: 210: cx= ds1307_read(0x00);
+	push	#0x00
+	call	_ds1307_read
+	addw	sp, #1
+;	ds1307_demo.c: 211: cx &= 0x7f;                  // CH Bit loeschen
+	and	a, #0x7f
+;	ds1307_demo.c: 212: ds1307_write(0x00,cx);
+	push	a
+	push	#0x00
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 213: delay_ms(1);
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 214: cx= ds1307_read(0x02);       // lese Stunde (die das 12 / 24 Std. Format Flag enthaellt)
+	push	#0x02
+	call	_ds1307_read
+	addw	sp, #1
+;	ds1307_demo.c: 215: delay_ms(1);
+	push	a
+	push	#0x01
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+	pop	a
+;	ds1307_demo.c: 216: cx &= 0xbf;                  // Bit 6= 0 => 24 Std. Format
+	and	a, #0xbf
+;	ds1307_demo.c: 217: ds1307_write(0x02,cx);
+	push	a
+	push	#0x02
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 219: return 1;
+	ldw	x, #0x0001
+00103$:
+	pop	a
+	ret
+;	ds1307_demo.c: 227: int main(void)
+;	-----------------------------------------
+;	 function main
+;	-----------------------------------------
+_main:
+	sub	sp, #18
+;	ds1307_demo.c: 234: sysclock_init(0);
+	push	#0x00
+	call	_sysclock_init
+	pop	a
+;	ds1307_demo.c: 235: delay_ms(400);
+	push	#0x90
+	push	#0x01
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 237: digit4_init();
+	call	_digit4_init
+;	ds1307_demo.c: 239: retast_init();
+	ldw	x, #0x500c
+	ld	a, (x)
+	and	a, #0xf7
+	ld	(x), a
+	ldw	x, #0x500d
+	ld	a, (x)
+	or	a, #0x08
+	ld	(x), a
+;	ds1307_demo.c: 240: midtast_init();
+	ldw	x, #0x500c
+	ld	a, (x)
+	and	a, #0xef
+	ld	(x), a
+	ldw	x, #0x500d
+	ld	a, (x)
+	or	a, #0x10
+	ld	(x), a
+;	ds1307_demo.c: 241: litast_init();
+	ldw	x, #0x500c
+	ld	a, (x)
+	and	a, #0xdf
+	ld	(x), a
+	ldw	x, #0x500d
+	ld	a, (x)
+	or	a, #0x20
+	ld	(x), a
+;	ds1307_demo.c: 243: if (ds1307_init())
+	call	_ds1307_init
+	tnzw	x
+	jreq	00102$
+;	ds1307_demo.c: 245: digit4_setdez(8888);      // kurze Anzeige wenn DS1307 gefunden
+	push	#0xb8
+	push	#0x22
+	call	_digit4_setdez
+	addw	sp, #2
+	jra	00106$
+;	ds1307_demo.c: 249: while(1)
+00102$:
+;	ds1307_demo.c: 251: digit4_setdez(4444);
+	push	#0x5c
+	push	#0x11
+	call	_digit4_setdez
+	addw	sp, #2
+;	ds1307_demo.c: 252: delay_ms(300);
+	push	#0x2c
+	push	#0x01
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 253: digit4_setall(0xff, 0xff, 0xff, 0xff);
+	push	#0xff
+	push	#0xff
+	push	#0xff
+	push	#0xff
+	call	_digit4_setall
+	addw	sp, #4
+;	ds1307_demo.c: 254: delay_ms(300);
+	push	#0x2c
+	push	#0x01
+	call	_delay_ms
+	addw	sp, #2
+	jra	00102$
+00106$:
+;	ds1307_demo.c: 258: ds1307_settime(0x16, 0x01, 0x01, 0x10, 0x11 , 0x00);    // 01.01.2016  10.11:00
+	push	#0x00
+	push	#0x11
+	push	#0x10
+	push	#0x01
+	push	#0x01
+	push	#0x16
+	call	_ds1307_settime
+	addw	sp, #6
+;	ds1307_demo.c: 262: oldsek= sek;
+	ld	a, _sek+0
+	ld	(0x01, sp), a
+;	ds1307_demo.c: 264: digit4_sethex(std << 8 | min);
+	ld	a, _std+0
+	ld	xh, a
+	clr	a
+	clr	(0x0e, sp)
+	ld	a, _min+0
+	clr	(0x0b, sp)
+	or	a, (0x0e, sp)
+	rlwa	x
+	or	a, (0x0b, sp)
+	ld	xh, a
+	pushw	x
+	call	_digit4_sethex
+	addw	sp, #2
+;	ds1307_demo.c: 268: do
+00117$:
+;	ds1307_demo.c: 270: ds1307_readtime();
+	call	_ds1307_readtime
+;	ds1307_demo.c: 272: if ( is_midtast() )
+	ldw	x, #0x500b
+	ld	a, (x)
+	and	a, #0x10
+	swap	a
+	and	a, #0x0f
+	ld	(0x04, sp), a
+	tnz	(0x04, sp)
+	jrne	00111$
+;	ds1307_demo.c: 274: std= ds1307_read(2) & 0x3f;
+	push	#0x02
+	call	_ds1307_read
+	addw	sp, #1
+	and	a, #0x3f
+	ld	_std+0, a
+;	ds1307_demo.c: 275: delay_ms(50);
+	push	#0x32
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 276: while( is_midtast() )
+00107$:
+	ldw	x, #0x500b
+	ld	a, (x)
+	and	a, #0x10
+	swap	a
+	and	a, #0x0f
+	tnz	a
+	jrne	00111$
+;	ds1307_demo.c: 278: std= bcd2dez(std);
+	push	_std+0
+	call	_bcd2dez
+	addw	sp, #1
+	ld	_std+0, a
+;	ds1307_demo.c: 279: delay_ms(250);
+	push	#0xfa
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 280: std++;
+	inc	_std+0
+;	ds1307_demo.c: 281: std= std % 24;
+	clrw	x
+	ld	a, _std+0
+	ld	xl, a
+	ld	a, #0x18
+	div	x, a
+	ld	_std+0, a
+;	ds1307_demo.c: 282: std= dez2bcd(std);
+	push	_std+0
+	call	_dez2bcd
+	addw	sp, #1
+	ld	_std+0, a
+;	ds1307_demo.c: 283: digit4_sethex(std << 8 | min);
+	ld	a, _std+0
+	ld	xh, a
+	clr	a
+	clr	(0x0a, sp)
+	ld	a, _min+0
+	clr	(0x07, sp)
+	or	a, (0x0a, sp)
+	rlwa	x
+	or	a, (0x07, sp)
+	ld	xh, a
+	pushw	x
+	call	_digit4_sethex
+	addw	sp, #2
+;	ds1307_demo.c: 284: ds1307_write(2,std);                   // Stunde schreiben
+	push	_std+0
+	push	#0x02
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 285: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+	jra	00107$
+00111$:
+;	ds1307_demo.c: 290: delay_ms(5);
+	push	#0x05
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 292: if ( is_retast() )
+	ldw	x, #0x500b
+	ld	a, (x)
+	and	a, #0x08
+	srl	a
+	srl	a
+	srl	a
+	tnz	a
+	jrne	00118$
+;	ds1307_demo.c: 294: min= ds1307_read(1) & 0x3f;
+	push	#0x01
+	call	_ds1307_read
+	addw	sp, #1
+	and	a, #0x3f
+	ld	_min+0, a
+;	ds1307_demo.c: 295: delay_ms(50);
+	push	#0x32
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 296: while( is_retast() )
+00112$:
+	ldw	x, #0x500b
+	ld	a, (x)
+	and	a, #0x08
+	srl	a
+	srl	a
+	srl	a
+	tnz	a
+	jrne	00118$
+;	ds1307_demo.c: 298: min= bcd2dez(min);
+	push	_min+0
+	call	_bcd2dez
+	addw	sp, #1
+	ld	_min+0, a
+;	ds1307_demo.c: 299: delay_ms(250);
+	push	#0xfa
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+;	ds1307_demo.c: 300: min++;
+	inc	_min+0
+;	ds1307_demo.c: 301: min= min % 60;
+	clrw	x
+	ld	a, _min+0
+	ld	xl, a
+	ld	a, #0x3c
+	div	x, a
+	ld	_min+0, a
+;	ds1307_demo.c: 302: min= dez2bcd(min);
+	push	_min+0
+	call	_dez2bcd
+	addw	sp, #1
+	ld	_min+0, a
+;	ds1307_demo.c: 303: digit4_sethex(std << 8 | min);
+	ld	a, _std+0
+	ld	xh, a
+	clr	a
+	clr	(0x03, sp)
+	ld	a, _min+0
+	clr	(0x05, sp)
+	or	a, (0x03, sp)
+	rlwa	x
+	or	a, (0x05, sp)
+	ld	xh, a
+	pushw	x
+	call	_digit4_sethex
+	addw	sp, #2
+;	ds1307_demo.c: 304: ds1307_write(1,min);                   // Stunde schreiben
+	push	_min+0
+	push	#0x01
+	call	_ds1307_write
+	addw	sp, #2
+;	ds1307_demo.c: 305: delay_ms(10);
+	push	#0x0a
+	push	#0x00
+	call	_delay_ms
+	addw	sp, #2
+	jra	00112$
+00118$:
+;	ds1307_demo.c: 310: } while(sek == oldsek);
+	ld	a, (0x01, sp)
+	cp	a, _sek+0
+	jrne	00178$
+	jp	00117$
+00178$:
+;	ds1307_demo.c: 311: oldsek= sek;
+	ld	a, _sek+0
+	ld	(0x01, sp), a
+;	ds1307_demo.c: 312: if (sek & 0x01) { digit4_setdp(2); } else { digit4_clrdp(2); }
+	btjt	_sek+0, #0, 00181$
+	jra	00121$
+00181$:
+	push	#0x02
+	call	_digit4_setdp
+	pop	a
+	jra	00122$
+00121$:
+	push	#0x02
+	call	_digit4_clrdp
+	pop	a
+00122$:
+;	ds1307_demo.c: 314: ds1307_readtime();
+	call	_ds1307_readtime
+;	ds1307_demo.c: 315: digit4_sethex(std << 8 | min);
+	ld	a, _std+0
+	ld	xh, a
+	clr	a
+	clr	(0x12, sp)
+	ld	a, _min+0
+	clr	(0x0f, sp)
+	or	a, (0x12, sp)
+	rlwa	x
+	or	a, (0x0f, sp)
+	ld	xh, a
+	pushw	x
+	call	_digit4_sethex
+	addw	sp, #2
+	jp	00117$
+	addw	sp, #18
+	ret
+	.area CODE
+	.area INITIALIZER
+	.area CABS (ABS)

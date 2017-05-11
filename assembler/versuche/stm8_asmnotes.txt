@@ -1,0 +1,70 @@
+STM8 Assembler
+---------------------------------------
+
+Port-Register:
+
+DDR : gesetzes Bit = Ausgang
+
+Bsp.: mov PB_DDR, #$30 ... PB4 und PB5 als Ausgang
+
+          PB_CR1 sollte denselben Wert wie DDR haben,
+          PB_CR2 den invertierten Wert von CR1
+
+-------------------------
+
+Schleifen:
+
+Z oder Y Register herunterzaehlen.
+
+Menmonic    Auswirkung
+
+  jrne          springt wenn das Ergebnis nicht 0 war
+
+-------------------------
+
+  ld a, addr          laedt von einer Speicheradresse
+
+  ld - fuer Bytetransfer , ldw - fuer 16 Bit-Transfer immer dann,
+  wenn auf oder von a, y oder x gespeichert wird. Ansonsten mov !
+
+  ldw x, #adresse     laedt die Wert der Adresse (Zeiger) nicht den Inhalt
+  ld a, (x)           laedt den Wert, auf den x zeigt
+
+  ld a,(0x04, x)      laedt den vierten Wert auf den x zeigt
+
+  tnz / tnzw src      testet, ob ein Wert 0 oder negativ ist
+                        N-Flag gesetzt wenn src = 0
+
+  jrne                springt wenn Z-Flag = 0
+
+  bcp a, #wert        vergleicht a mit Wert, Z-Flag = 1 wenn result = 0x00
+  -----------------------------
+    ld a, #0x20
+    bcp a, #0x40
+    jrne no_zero                  ; springt bei Gleichheit (hier wird
+                                  ; nicht gesprungen
+    jp is_zero
+  no_zero:
+    ld a, #'1'
+    call_putchar
+    jp end_zerocheck
+  is_zero:
+    ld a, #'0'
+    call_putchar
+  -----------------------------
+
+  btjt                testet ein Bit und springt wenn gesetzt
+  btjf                testet ein Bit und springt wenn nicht gesetzt
+  -----------------------------
+    ld a,#0x04
+    ld b1,a
+    btjt b1, #2, gesetzt
+    ld a, #'-'
+    call_putchar
+    jra end_bittest
+  gesetzt:
+    ld a, #'x'
+    call_putchar
+  end_bittest:
+  -----------------------------
+

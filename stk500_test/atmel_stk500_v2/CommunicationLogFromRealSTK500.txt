@@ -1,0 +1,2530 @@
+Port opened successfully
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.000
+( 200ms) > 1B 01 00 01 0E 
+( 200ms) > 01 
+( 200ms) > 14 
+Sequence number 1, message size 1, checksum 20
+CMD_SIGN_ON
+
+Receiving packet 11/28/2006 21:25:53.000
+( 200ms) < 1B 01 00 0B 0E 
+( 200ms) < 01 00 08 53 54 4B 35 30 30 5F 32 02 
+Sequence number 1, message size 11, checksum 2
+CMD_SIGN_ON
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.000
+(1000ms) > 1B 02 00 02 0E 
+(1000ms) > 03 9A 
+(1000ms) > 8C 
+Sequence number 2, message size 2, checksum 140
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.015
+(1000ms) < 1B 02 00 03 0E 
+(1000ms) < 03 00 FF E8 
+Sequence number 2, message size 3, checksum 232
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.015
+(1000ms) > 1B 03 00 02 0E 
+(1000ms) > 03 90 
+(1000ms) > 87 
+Sequence number 3, message size 2, checksum 135
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.015
+(1000ms) < 1B 03 00 03 0E 
+(1000ms) < 03 00 02 14 
+Sequence number 3, message size 3, checksum 20
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.015
+(1000ms) > 1B 04 00 02 0E 
+(1000ms) > 03 91 
+(1000ms) > 81 
+Sequence number 4, message size 2, checksum 129
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.015
+(1000ms) < 1B 04 00 03 0E 
+(1000ms) < 03 00 02 13 
+Sequence number 4, message size 3, checksum 19
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.015
+(1000ms) > 1B 05 00 02 0E 
+(1000ms) > 03 92 
+(1000ms) > 83 
+Sequence number 5, message size 2, checksum 131
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.031
+(1000ms) < 1B 05 00 03 0E 
+(1000ms) < 03 00 0A 1A 
+Sequence number 5, message size 3, checksum 26
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.093
+(1000ms) > 1B 06 00 02 0E 
+(1000ms) > 03 9A 
+(1000ms) > 88 
+Sequence number 6, message size 2, checksum 136
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.093
+(1000ms) < 1B 06 00 03 0E 
+( 985ms) < 03 00 FF EC 
+Sequence number 6, message size 3, checksum 236
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.125
+(1000ms) > 1B 07 00 02 0E 
+(1000ms) > 03 9F 
+(1000ms) > 8C 
+Sequence number 7, message size 2, checksum 140
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.125
+(1000ms) < 1B 07 00 03 0E 
+(1000ms) < 03 00 01 13 
+Sequence number 7, message size 3, checksum 19
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.171
+(1000ms) > 1B 08 00 03 0E 
+(1000ms) > 02 9E 01 
+(1000ms) > 83 
+Sequence number 8, message size 3, checksum 131
+CMD_SET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.171
+(1000ms) < 1B 08 00 02 0E 
+(1000ms) < 02 00 1D 
+Sequence number 8, message size 2, checksum 29
+CMD_SET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.187
+(1000ms) > 1B 09 00 03 0E 
+(1000ms) > 02 9F 01 
+(1000ms) > 83 
+Sequence number 9, message size 3, checksum 131
+CMD_SET_PARAMETER
+
+Receiving packet 11/28/2006 21:25:53.187
+(1000ms) < 1B 09 00 02 0E 
+(1000ms) < 02 00 1C 
+Sequence number 9, message size 2, checksum 28
+CMD_SET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:25:53.187
+(1200ms) > 1B 0A 00 0C 0E 
+(1200ms) > 10 C8 64 19 20 00 53 03 AC 53 00 00 
+(1200ms) > 39 
+Sequence number 10, message size 12, checksum 57
+CMD_ENTER_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:25:53.187
+(1200ms) < 1B 0A 00 02 0E 
+(1153ms) < 10 C0 CD 
+Sequence number 10, message size 2, checksum 205
+CMD_ENTER_PROGMODE_ISP
+Returned status: STK500: Command failed
+
+Sending packet 11/28/2006 21:25:53.234
+(1000ms) > 1B 0B 00 03 0E 
+(1000ms) > 11 01 01 
+(1000ms) > 0C 
+Sequence number 11, message size 3, checksum 12
+CMD_LEAVE_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:25:53.234
+(1000ms) < 1B 0B 00 02 0E 
+(1000ms) < 11 00 0D 
+Sequence number 11, message size 2, checksum 13
+CMD_LEAVE_PROGMODE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:01.656
+(1000ms) > 1B 0C 00 02 0E 
+(1000ms) > 03 9A 
+(1000ms) > 82 
+Sequence number 12, message size 2, checksum 130
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:01.656
+(1000ms) < 1B 0C 00 03 0E 
+( 984ms) < 03 00 FF E6 
+Sequence number 12, message size 3, checksum 230
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:01.671
+(1000ms) > 1B 0D 00 02 0E 
+(1000ms) > 03 9F 
+(1000ms) > 86 
+Sequence number 13, message size 2, checksum 134
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:01.687
+(1000ms) < 1B 0D 00 03 0E 
+(1000ms) < 03 00 01 19 
+Sequence number 13, message size 3, checksum 25
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:01.718
+(1000ms) > 1B 0E 00 03 0E 
+(1000ms) > 02 9E 01 
+(1000ms) > 85 
+Sequence number 14, message size 3, checksum 133
+CMD_SET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:01.718
+(1000ms) < 1B 0E 00 02 0E 
+(1000ms) < 02 00 1B 
+Sequence number 14, message size 2, checksum 27
+CMD_SET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:01.718
+(1000ms) > 1B 0F 00 03 0E 
+(1000ms) > 02 9F 01 
+(1000ms) > 85 
+Sequence number 15, message size 3, checksum 133
+CMD_SET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:01.718
+(1000ms) < 1B 0F 00 02 0E 
+(1000ms) < 02 00 1A 
+Sequence number 15, message size 2, checksum 26
+CMD_SET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:01.718
+(1200ms) > 1B 10 00 0C 0E 
+(1200ms) > 10 C8 64 19 20 00 53 03 AC 53 00 00 
+(1200ms) > 23 
+Sequence number 16, message size 12, checksum 35
+CMD_ENTER_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:26:01.718
+(1200ms) < 1B 10 00 02 0E 
+(1154ms) < 10 C0 D7 
+Sequence number 16, message size 2, checksum 215
+CMD_ENTER_PROGMODE_ISP
+Returned status: STK500: Command failed
+
+Sending packet 11/28/2006 21:26:01.765
+(1000ms) > 1B 11 00 03 0E 
+(1000ms) > 11 01 01 
+(1000ms) > 16 
+Sequence number 17, message size 3, checksum 22
+CMD_LEAVE_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:26:01.765
+(1000ms) < 1B 11 00 02 0E 
+(1000ms) < 11 00 17 
+Sequence number 17, message size 2, checksum 23
+CMD_LEAVE_PROGMODE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:14.921
+(1000ms) > 1B 12 00 02 0E 
+(1000ms) > 03 9A 
+(1000ms) > 9C 
+Sequence number 18, message size 2, checksum 156
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:14.921
+(1000ms) < 1B 12 00 03 0E 
+( 985ms) < 03 00 FF F8 
+Sequence number 18, message size 3, checksum 248
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:14.937
+(1000ms) > 1B 13 00 02 0E 
+(1000ms) > 03 9F 
+(1000ms) > 98 
+Sequence number 19, message size 2, checksum 152
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:14.937
+(1000ms) < 1B 13 00 03 0E 
+(1000ms) < 03 00 01 07 
+Sequence number 19, message size 3, checksum 7
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:14.937
+(1200ms) > 1B 14 00 0C 0E 
+(1200ms) > 10 C8 64 19 20 00 53 03 AC 53 00 00 
+(1200ms) > 27 
+Sequence number 20, message size 12, checksum 39
+CMD_ENTER_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:26:14.953
+(1200ms) < 1B 14 00 02 0E 
+(1184ms) < 10 00 13 
+Sequence number 20, message size 2, checksum 19
+CMD_ENTER_PROGMODE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:14.968
+(1000ms) > 1B 15 00 06 0E 
+(1000ms) > 18 04 50 00 00 00 
+(1000ms) > 4A 
+Sequence number 21, message size 6, checksum 74
+CMD_READ_FUSE_ISP
+
+Receiving packet 11/28/2006 21:26:14.984
+(1000ms) < 1B 15 00 04 0E 
+(1000ms) < 18 00 EF 00 F3 
+Sequence number 21, message size 4, checksum 243
+CMD_READ_FUSE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:14.984
+(1000ms) > 1B 16 00 06 0E 
+(1000ms) > 18 04 58 08 00 00 
+(1000ms) > 49 
+Sequence number 22, message size 6, checksum 73
+CMD_READ_FUSE_ISP
+
+Receiving packet 11/28/2006 21:26:14.984
+(1000ms) < 1B 16 00 04 0E 
+(1000ms) < 18 00 D9 00 C6 
+Sequence number 22, message size 4, checksum 198
+CMD_READ_FUSE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:14.984
+(1000ms) > 1B 17 00 03 0E 
+(1000ms) > 11 01 01 
+(1000ms) > 10 
+Sequence number 23, message size 3, checksum 16
+CMD_LEAVE_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:26:14.984
+(1000ms) < 1B 17 00 02 0E 
+(1000ms) < 11 00 11 
+Sequence number 23, message size 2, checksum 17
+CMD_LEAVE_PROGMODE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:28.890
+(1000ms) > 1B 18 00 02 0E 
+(1000ms) > 03 9A 
+(1000ms) > 96 
+Sequence number 24, message size 2, checksum 150
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:28.890
+(1000ms) < 1B 18 00 03 0E 
+( 984ms) < 03 00 FF F2 
+Sequence number 24, message size 3, checksum 242
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:28.937
+(1000ms) > 1B 19 00 02 0E 
+(1000ms) > 03 9F 
+(1000ms) > 92 
+Sequence number 25, message size 2, checksum 146
+CMD_GET_PARAMETER
+
+Receiving packet 11/28/2006 21:26:28.937
+(1000ms) < 1B 19 00 03 0E 
+(1000ms) < 03 00 01 0D 
+Sequence number 25, message size 3, checksum 13
+CMD_GET_PARAMETER
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:28.937
+(1200ms) > 1B 1A 00 0C 0E 
+(1200ms) > 10 C8 64 19 20 00 53 03 AC 53 00 00 
+(1200ms) > 29 
+Sequence number 26, message size 12, checksum 41
+CMD_ENTER_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:26:28.953
+(1200ms) < 1B 1A 00 02 0E 
+(1184ms) < 10 00 1D 
+Sequence number 26, message size 2, checksum 29
+CMD_ENTER_PROGMODE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:28.968
+(1000ms) > 1B 1B 00 07 0E 
+(1000ms) > 12 14 00 AC 80 00 00 
+(1000ms) > 23 
+Sequence number 27, message size 7, checksum 35
+CMD_CHIP_ERASE_ISP
+
+Receiving packet 11/28/2006 21:26:28.968
+(1000ms) < 1B 1B 00 02 0E 
+( 985ms) < 12 00 1E 
+Sequence number 27, message size 2, checksum 30
+CMD_CHIP_ERASE_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:28.984
+(1000ms) > 1B 1C 00 05 0E 
+(1000ms) > 06 00 00 00 00 
+(1000ms) > 0A 
+Sequence number 28, message size 5, checksum 10
+CMD_LOAD_ADDRESS
+
+Receiving packet 11/28/2006 21:26:28.984
+(1000ms) < 1B 1C 00 02 0E 
+(1000ms) < 06 00 0D 
+Sequence number 28, message size 2, checksum 13
+CMD_LOAD_ADDRESS
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:28.984
+(5000ms) > 1B 1D 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 D9 C0 F2 C0 F1 C0 
+> F0 C0 EF C0 EE C0 ED C0 EC C0 EB C0 EA C0 E9 C0 
+> E8 C0 E7 C0 E6 C0 05 C9 E4 C0 E3 C0 E2 C0 E1 C0 
+> 42 C1 55 C1 6B C1 06 C5 B0 C2 BD C1 E5 C2 02 C5 
+> 01 C5 83 C2 FF C4 FE C4 FD C4 
+(5000ms) > A7 
+Sequence number 29, message size 74, checksum 167
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:28.984
+(5000ms) < 1B 1D 00 02 0E 
+(4984ms) < 13 00 19 
+Sequence number 29, message size 2, checksum 25
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.015
+(5000ms) > 1B 1E 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 FC C4 FB C4 E7 C1 
+> 7C C2 7D C2 A8 C2 2F C4 A5 C2 2C C4 80 C4 92 C4 
+> 7E C4 90 C4 8F C4 8E C4 AE C4 8C C1 81 C1 EA C4 
+> E9 C4 E8 C4 E7 C4 E6 C4 E5 C4 E4 C4 E3 C4 E2 C4 
+> E1 C4 E0 C4 DF C4 DE C4 DD C4 
+(5000ms) > E9 
+Sequence number 30, message size 74, checksum 233
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.015
+(5000ms) < 1B 1E 00 02 0E 
+(4984ms) < 13 00 1A 
+Sequence number 30, message size 2, checksum 26
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.031
+(5000ms) > 1B 1F 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 6F C1 4E C1 50 C1 
+> D9 C4 51 C1 5E C1 69 C1 6B C1 5E C1 D3 C4 6B C1 
+> D1 C4 D0 C4 6F C1 5B C1 5D C1 CC C4 67 C1 1B 5B 
+> 30 6D 1B 5B 32 4A 1B 5B 30 3B 30 66 00 76 65 72 
+> 73 69 6F 6E 3A 20 31 2E 37 00 
+(5000ms) > 9E 
+Sequence number 31, message size 74, checksum 158
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.031
+(5000ms) < 1B 1F 00 02 0E 
+(4984ms) < 13 00 1B 
+Sequence number 31, message size 2, checksum 27
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.046
+(5000ms) > 1B 20 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 2C 20 74 65 72 6D 
+> 69 6E 61 6C 20 63 6F 6E 66 69 67 20 6D 6F 64 65 
+> 0D 0A 00 45 6E 74 65 72 20 53 57 20 56 65 72 73 
+> 69 6F 6E 20 4D 61 6A 6F 72 20 69 6E 20 68 65 78 
+> 20 5B 00 5D 3A 20 00 45 6E 74 
+(5000ms) > 2E 
+Sequence number 32, message size 74, checksum 46
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.062
+(5000ms) < 1B 20 00 02 0E 
+(5000ms) < 13 00 24 
+Sequence number 32, message size 2, checksum 36
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.062
+(5000ms) > 1B 21 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 65 72 20 53 57 20 
+> 56 65 72 73 69 6F 6E 20 4D 69 6E 6F 72 20 69 6E 
+> 20 68 65 78 20 5B 00 5D 3A 20 00 52 65 73 65 74 
+> 20 74 61 72 67 65 74 20 61 74 20 63 6F 6E 6E 65 
+> 63 74 6F 72 20 70 6F 6C 61 72 
+(5000ms) > 77 
+Sequence number 33, message size 74, checksum 119
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.078
+(5000ms) < 1B 21 00 02 0E 
+(4984ms) < 13 00 25 
+Sequence number 33, message size 2, checksum 37
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.093
+(5000ms) > 1B 22 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 69 74 79 20 74 65 
+> 73 74 28 31 3D 6F 6E 20 30 3D 6F 66 66 29 5B 00 
+> 5D 3A 20 00 0D 0A 4F 4B 2C 20 6D 79 20 53 57 20 
+> 76 65 72 73 69 6F 6E 20 69 73 20 6E 6F 77 3A 20 
+> 00 20 28 68 65 78 29 0D 0A 00 
+(5000ms) > 16 
+Sequence number 34, message size 74, checksum 22
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.093
+(5000ms) < 1B 22 00 02 0E 
+(4985ms) < 13 00 26 
+Sequence number 34, message size 2, checksum 38
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.109
+(5000ms) > 1B 23 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 52 65 61 64 79 2E 
+> 20 4A 75 73 74 20 63 6C 6F 73 65 20 74 68 65 20 
+> 74 65 72 6D 69 6E 61 6C 2E 20 4E 6F 20 72 65 73 
+> 65 74 20 6E 65 65 64 65 64 2E 0D 0A 00 00 11 24 
+> 1F BE CF E5 D4 E0 DE BF CD BF 
+(5000ms) > E0 
+Sequence number 35, message size 74, checksum 224
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.109
+(5000ms) < 1B 23 00 02 0E 
+(4984ms) < 13 00 27 
+Sequence number 35, message size 2, checksum 39
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.125
+(5000ms) > 1B 24 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 10 E0 A0 E6 B0 E0 
+> EE E5 F4 E1 02 C0 05 90 0D 92 AE 36 B1 07 D9 F7 
+> 11 E0 AE E6 B0 E0 01 C0 1D 92 AC 3A B1 07 E1 F7 
+> 32 C5 0B CF A0 E0 B0 E0 EA EF F0 E0 E1 C8 18 2F 
+> EB 01 CB 01 01 97 8D 51 91 40 
+(5000ms) > 62 
+Sequence number 36, message size 74, checksum 98
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.140
+(5000ms) < 1B 24 00 02 0E 
+(5000ms) < 13 00 20 
+Sequence number 36, message size 2, checksum 32
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.140
+(5000ms) > 1B 25 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 28 F0 C2 E0 D0 E0 
+> 80 EC 80 93 7A 00 8B E1 D8 D5 9B E1 D9 2E 81 2F 
+> D4 D5 D1 26 8D 2F 99 27 18 2F CF D5 D1 26 8C 2F 
+> CC D5 DC 26 8E E0 C9 D5 8E E0 D8 26 A8 95 EE 24 
+> FF 24 EC 16 FD 06 78 F4 09 E7 
+(5000ms) > 07 
+Sequence number 37, message size 74, checksum 7
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.156
+(5000ms) < 1B 25 00 02 0E 
+(4984ms) < 13 00 21 
+Sequence number 37, message size 2, checksum 33
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.171
+(5000ms) > 1B 26 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 10 E0 F8 01 80 81 
+> BC D5 F8 01 81 91 8F 01 D8 26 08 94 E1 1C F1 1C 
+> EC 16 FD 06 98 F3 8D 2D B0 D5 E7 E0 CD B7 DE B7 
+> C3 C8 F1 D6 C2 9A 10 92 76 00 81 E0 39 D7 97 98 
+> 10 92 77 00 83 E0 3E D8 08 95 
+(5000ms) > 70 
+Sequence number 38, message size 74, checksum 112
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.171
+(5000ms) < 1B 26 00 02 0E 
+(4985ms) < 13 00 22 
+Sequence number 38, message size 2, checksum 34
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.187
+(5000ms) > 1B 27 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 A0 E0 B0 E0 E5 E4 
+> F1 E0 8E C8 58 2E F1 E0 6F 2E 80 91 79 00 99 27 
+> AA 27 BB 27 FC 01 31 97 ED 31 F1 05 08 F0 CA C3 
+> ED 5E FF 4F 09 94 81 E0 80 93 79 00 10 92 7A 00 
+> 88 E0 80 93 7B 00 89 E0 A1 E6 
+(5000ms) > 35 
+Sequence number 39, message size 74, checksum 53
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.187
+(5000ms) < 1B 27 00 02 0E 
+(4984ms) < 13 00 23 
+Sequence number 39, message size 2, checksum 35
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.203
+(5000ms) > 1B 28 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 B0 E0 EC E7 F0 E0 
+> 0D 90 01 92 8A 95 E1 F7 0B E0 10 E0 B8 C3 80 91 
+> 7A 00 88 39 21 F4 80 91 7B 00 E3 D5 56 C1 8E 39 
+> 29 F4 80 91 7B 00 80 93 60 00 4F C1 8F 39 09 F0 
+> 4C C1 80 91 7B 00 80 93 78 00 
+(5000ms) > 8A 
+Sequence number 40, message size 74, checksum 138
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.218
+(5000ms) < 1B 28 00 02 0E 
+(5000ms) < 13 00 2C 
+Sequence number 40, message size 2, checksum 44
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.234
+(5000ms) > 1B 29 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 47 C1 80 91 7A 00 
+> 99 27 AA 27 BB 27 FC 01 E0 58 F0 40 E2 32 F1 05 
+> 08 F0 90 C3 E0 5D FF 4F 09 94 F0 90 AA 01 38 C0 
+> F0 90 AB 01 35 C0 80 91 77 00 88 23 71 F4 80 91 
+> 76 00 88 23 19 F0 E2 E3 FE 2E 
+(5000ms) > 45 
+Sequence number 41, message size 74, checksum 69
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.234
+(5000ms) < 1B 29 00 02 0E 
+(4984ms) < 13 00 2D 
+Sequence number 41, message size 2, checksum 45
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.250
+(5000ms) > 1B 2A 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 2E C0 9B D7 91 D7 
+> 04 C0 79 E1 F7 2E 28 C0 DB D5 F8 2E 21 C0 F0 90 
+> 60 00 1E C0 F0 90 78 00 1B C0 62 E0 F6 2E 1C C0 
+> 51 E0 F5 2E 19 C0 48 E8 F4 2E 16 C0 C0 91 76 00 
+> CC 23 11 F0 FF 24 10 C0 8C 2F 
+(5000ms) > EB 
+Sequence number 42, message size 74, checksum 235
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.250
+(5000ms) < 1B 2A 00 02 0E 
+(4985ms) < 13 00 2E 
+Sequence number 42, message size 2, checksum 46
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.265
+(5000ms) > 1B 2B 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 7C D7 72 D7 32 E2 
+> F3 2E 8B 30 48 F0 8F D7 88 23 31 F0 FC 2E 04 C0 
+> 8F EF F8 16 09 F4 4E C3 03 E0 10 E0 10 92 7A 00 
+> F0 92 7B 00 4C C3 80 91 7A 00 99 27 AA 27 BB 27 
+> B8 2F AA 27 99 27 88 27 20 91 
+(5000ms) > 86 
+Sequence number 43, message size 74, checksum 134
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.281
+(5000ms) < 1B 2B 00 02 0E 
+(5000ms) < 13 00 2F 
+Sequence number 43, message size 2, checksum 47
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.281
+(5000ms) > 1B 2C 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 7B 00 33 27 44 27 
+> 55 27 A9 01 33 27 22 27 82 2B 93 2B A4 2B B5 2B 
+> 20 91 7C 00 33 27 44 27 55 27 54 2F 43 2F 32 2F 
+> 22 27 82 2B 93 2B A4 2B B5 2B 20 91 7D 00 33 27 
+> 44 27 55 27 82 2B 93 2B A4 2B 
+(5000ms) > 0F 
+Sequence number 44, message size 74, checksum 15
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.296
+(5000ms) < 1B 2C 00 02 0E 
+(4985ms) < 13 00 28 
+Sequence number 44, message size 2, checksum 40
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.312
+(5000ms) > 1B 2D 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 B5 2B 80 93 72 00 
+> 90 93 73 00 A0 93 74 00 B0 93 75 00 BE C0 1B D6 
+> 97 98 80 E0 65 D6 8A E0 90 E0 1E D6 80 E0 2A D7 
+> 20 D7 80 93 77 00 86 31 10 F4 83 E0 05 C0 83 32 
+> 10 F4 85 E0 01 C0 87 E0 5D D7 
+(5000ms) > 9D 
+Sequence number 45, message size 74, checksum 157
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.312
+(5000ms) < 1B 2D 00 02 0E 
+(4984ms) < 13 00 29 
+Sequence number 45, message size 2, checksum 41
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.328
+(5000ms) > 1B 2E 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 91 77 00 89 30 
+> 10 F4 87 E0 57 D7 97 9A 8A E0 90 E0 05 D6 74 D5 
+> C1 E0 C0 93 76 00 80 91 7B 00 99 27 FD D5 02 E0 
+> 10 E0 80 EC 80 93 7A 00 CC 24 DD 24 80 91 7D 00 
+> 81 33 18 F0 80 E3 80 93 7D 00 
+(5000ms) > 26 
+Sequence number 46, message size 74, checksum 38
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.328
+(5000ms) < 1B 2E 00 02 0E 
+(4984ms) < 13 00 2A 
+Sequence number 46, message size 2, checksum 42
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.343
+(5000ms) > 1B 2F 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 91 7E 00 88 23 
+> 11 F4 C0 93 7E 00 80 91 7D 00 99 27 C8 16 D9 06 
+> 08 F0 4C C0 A8 95 C2 98 08 94 C1 1C D1 1C 80 91 
+> 7C 00 99 27 D9 D5 80 91 81 00 63 D5 80 91 7E 00 
+> 99 27 D2 D5 80 91 82 00 5C D5 
+(5000ms) > 2E 
+Sequence number 47, message size 74, checksum 46
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.359
+(5000ms) < 1B 2F 00 02 0E 
+(5000ms) < 13 00 2B 
+Sequence number 47, message size 2, checksum 43
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.359
+(5000ms) > 1B 30 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 91 7E 00 99 27 
+> CB D5 C2 9A 80 91 83 00 54 D5 F8 2E 80 91 7E 00 
+> 99 27 C2 D5 80 91 84 00 4C D5 78 2E 80 91 7E 00 
+> 99 27 BA D5 90 91 80 00 93 30 39 F4 80 91 7F 00 
+> F8 16 69 F4 10 92 7A 00 0A C0 
+(5000ms) > F4 
+Sequence number 48, message size 74, checksum 244
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.375
+(5000ms) < 1B 30 00 02 0E 
+(4985ms) < 13 00 34 
+Sequence number 48, message size 2, checksum 52
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.390
+(5000ms) > 1B 31 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 91 7F 00 78 16 
+> 11 F4 10 92 7A 00 99 23 11 F4 90 93 7A 00 80 91 
+> 7A 00 88 23 31 F4 C2 98 80 91 7D 00 C8 2E DD 24 
+> B2 CF F2 D4 84 E1 90 E0 97 D5 AD CF 80 91 7A 00 
+> 88 23 09 F4 84 C2 95 DE 82 C2 
+(5000ms) > 4C 
+Sequence number 49, message size 74, checksum 76
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.390
+(5000ms) < 1B 31 00 02 0E 
+(4984ms) < 13 00 35 
+Sequence number 49, message size 2, checksum 53
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.406
+(5000ms) > 1B 32 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 93 DE 26 C0 80 91 
+> 7C 00 17 D5 80 91 7D 00 14 D5 80 91 7E 00 11 D5 
+> 80 91 7F 00 0E D5 A8 95 80 91 7B 00 88 23 29 F4 
+> 80 91 7A 00 99 27 78 D5 0D C0 C6 E9 EC 2E 01 C0 
+> EA 94 60 E0 70 E0 80 E0 90 EF 
+(5000ms) > 38 
+Sequence number 50, message size 74, checksum 56
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.406
+(5000ms) < 1B 32 00 02 0E 
+(4984ms) < 13 00 36 
+Sequence number 50, message size 2, checksum 54
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.421
+(5000ms) > 1B 33 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 49 D5 80 FF 02 C0 
+> EE 20 B1 F7 84 E1 90 E0 67 D5 02 E0 10 E0 10 92 
+> 7A 00 55 C2 66 24 88 24 99 24 54 01 B6 E9 EB 2E 
+> 80 91 7D 00 84 30 18 F4 84 E0 80 93 7D 00 80 91 
+> 7D 00 81 32 18 F0 80 E2 80 93 
+(5000ms) > D0 
+Sequence number 51, message size 74, checksum 208
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.437
+(5000ms) < 1B 33 00 02 0E 
+(5000ms) < 13 00 37 
+Sequence number 51, message size 2, checksum 55
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.437
+(5000ms) > 1B 34 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 7D 00 80 91 72 00 
+> 90 91 73 00 A0 91 74 00 B0 91 75 00 80 93 6E 00 
+> 90 93 6F 00 A0 93 70 00 B0 93 71 00 80 91 7A 00 
+> 99 27 D8 2F CC 27 80 91 7B 00 99 27 C8 2B D9 2B 
+> 91 E0 C9 31 D9 07 20 F0 02 E0 
+(5000ms) > 54 
+Sequence number 52, message size 74, checksum 84
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.453
+(5000ms) < 1B 34 00 02 0E 
+(4984ms) < 13 00 30 
+Sequence number 52, message size 2, checksum 48
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.468
+(5000ms) > 1B 35 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 10 E0 80 EC 1D C2 
+> A8 95 70 90 7C 00 FF 24 87 2D 99 27 80 95 90 95 
+> 9C 01 21 70 30 70 80 FF 94 C0 CC 24 DD 24 CC 16 
+> DD 06 08 F0 3A C1 09 E7 10 E0 66 20 31 F0 C0 FE 
+> 04 C0 80 91 7E 00 88 60 02 C0 
+(5000ms) > EE 
+Sequence number 53, message size 74, checksum 238
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.468
+(5000ms) < 1B 35 00 02 0E 
+(4985ms) < 13 00 31 
+Sequence number 53, message size 2, checksum 49
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.484
+(5000ms) > 1B 36 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 91 7E 00 99 D4 
+> 80 91 72 00 90 91 73 00 D6 D4 F8 01 82 85 91 D4 
+> 90 91 81 00 F8 01 82 85 98 17 99 F0 80 90 72 00 
+> 90 90 73 00 A0 90 74 00 B0 90 75 00 8F EF 9F EF 
+> A0 E0 B0 E0 88 22 99 22 AA 22 
+(5000ms) > C9 
+Sequence number 54, message size 74, checksum 201
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.484
+(5000ms) < 1B 36 00 02 0E 
+(4984ms) < 13 00 32 
+Sequence number 54, message size 2, checksum 50
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.500
+(5000ms) > 1B 37 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 BB 22 70 92 7C 00 
+> 03 C0 82 E0 80 93 7C 00 A8 95 66 20 19 F4 82 E0 
+> 90 E0 E2 D4 80 91 7C 00 99 27 82 FF 19 C0 F6 E9 
+> EF 2E 66 20 31 F0 C0 FE 04 C0 80 91 80 00 88 60 
+> 02 C0 80 91 80 00 5D D4 C4 01 
+(5000ms) > 8A 
+Sequence number 55, message size 74, checksum 138
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.515
+(5000ms) < 1B 37 00 02 0E 
+(5000ms) < 13 00 33 
+Sequence number 55, message size 2, checksum 51
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.531
+(5000ms) > 1B 38 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 9D D4 80 E0 59 D4 
+> EA 94 90 91 81 00 89 17 B9 F4 EE 20 51 F7 14 C0 
+> 83 FF 0E C0 E6 E9 EE 2E 01 C0 EA 94 60 E0 70 E0 
+> 80 E0 90 EF 94 D4 80 FF 07 C0 EE 20 B1 F7 04 C0 
+> 80 91 7D 00 99 27 B0 D4 66 20 
+(5000ms) > F0 
+Sequence number 56, message size 74, checksum 240
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.531
+(5000ms) < 1B 38 00 02 0E 
+(4984ms) < 13 00 3C 
+Sequence number 56, message size 2, checksum 60
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.546
+(5000ms) > 1B 39 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 11 F0 C0 FE 13 C0 
+> 80 91 72 00 90 91 73 00 A0 91 74 00 B0 91 75 00 
+> 01 96 A1 1D B1 1D 80 93 72 00 90 93 73 00 A0 93 
+> 74 00 B0 93 75 00 EE 20 11 F4 70 E8 F7 2E 08 94 
+> C1 1C D1 1C 0F 5F 1F 4F CC 16 
+(5000ms) > FA 
+Sequence number 57, message size 74, checksum 250
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.546
+(5000ms) < 1B 39 00 02 0E 
+(4985ms) < 13 00 3D 
+Sequence number 57, message size 2, checksum 61
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.562
+(5000ms) > 1B 3A 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 DD 06 08 F4 75 CF 
+> AC C0 69 01 2C 17 3D 07 08 F0 53 C0 09 E7 10 E0 
+> A8 95 66 20 31 F0 C0 FE 04 C0 80 91 7E 00 88 60 
+> 02 C0 80 91 7E 00 05 D4 80 91 72 00 90 91 73 00 
+> 42 D4 F8 01 82 85 FD D3 90 91 
+(5000ms) > 4E 
+Sequence number 58, message size 74, checksum 78
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.562
+(5000ms) < 1B 3A 00 02 0E 
+(4984ms) < 13 00 3E 
+Sequence number 58, message size 2, checksum 62
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.578
+(5000ms) > 1B 3B 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 81 00 F8 01 82 85 
+> 98 17 89 F0 80 90 72 00 90 90 73 00 A0 90 74 00 
+> B0 90 75 00 8F EF 9F EF A0 E0 B0 E0 88 22 99 22 
+> AA 22 BB 22 06 C0 80 91 7C 00 8F 78 80 61 80 93 
+> 7C 00 66 20 11 F0 C0 FE 13 C0 
+(5000ms) > 5E 
+Sequence number 59, message size 74, checksum 94
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.593
+(5000ms) < 1B 3B 00 02 0E 
+(5000ms) < 13 00 3F 
+Sequence number 59, message size 2, checksum 63
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.609
+(5000ms) > 1B 3C 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 91 72 00 90 91 
+> 73 00 A0 91 74 00 B0 91 75 00 01 96 A1 1D B1 1D 
+> 80 93 72 00 90 93 73 00 A0 93 74 00 B0 93 75 00 
+> 08 94 C1 1C D1 1C 0F 5F 1F 4F CC 16 DD 06 08 F4 
+> AF CF A8 95 80 91 7C 00 87 FF 
+(5000ms) > F6 
+Sequence number 60, message size 74, checksum 246
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.609
+(5000ms) < 1B 3C 00 02 0E 
+(4984ms) < 13 00 38 
+Sequence number 60, message size 2, checksum 56
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.625
+(5000ms) > 1B 3D 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 4F C0 80 91 7F 00 
+> B8 D3 80 91 6E 00 90 91 6F 00 F5 D3 80 E0 B1 D3 
+> 66 20 19 F4 81 E0 90 E0 1F D4 66 E9 E6 2E 80 91 
+> 7C 00 85 FF 24 C0 81 14 91 04 A1 04 B1 04 F9 F0 
+> D5 01 C4 01 81 70 90 70 A0 70 
+(5000ms) > FA 
+Sequence number 61, message size 74, checksum 250
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.625
+(5000ms) < 1B 3D 00 02 0E 
+(4985ms) < 13 00 39 
+Sequence number 61, message size 2, checksum 57
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.640
+(5000ms) > 1B 3E 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 B0 70 89 2B 21 F0 
+> 80 91 80 00 88 60 02 C0 80 91 80 00 92 D3 C4 01 
+> D2 D3 80 E0 8E D3 EA 94 90 91 81 00 89 17 11 F4 
+> EE 20 31 F7 EE 20 C9 F4 50 E8 F5 2E 16 C0 86 FF 
+> 10 C0 01 C0 EA 94 60 E0 70 E0 
+(5000ms) > A6 
+Sequence number 62, message size 74, checksum 166
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.656
+(5000ms) < 1B 3E 00 02 0E 
+(4984ms) < 13 00 3A 
+Sequence number 62, message size 2, checksum 58
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.671
+(5000ms) > 1B 3F 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 E0 90 EF C7 D3 
+> 80 FF 02 C0 EE 20 B1 F7 EE 20 39 F4 41 E8 F4 2E 
+> 04 C0 80 91 7D 00 99 27 DF D3 02 E0 10 E0 F0 92 
+> 7A 00 CD C0 66 24 80 91 7A 00 99 27 D8 2F CC 27 
+> 80 91 7B 00 99 27 C8 2B D9 2B 
+(5000ms) > 56 
+Sequence number 63, message size 74, checksum 86
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.671
+(5000ms) < 1B 3F 00 02 0E 
+(4985ms) < 13 00 3B 
+Sequence number 63, message size 2, checksum 59
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.687
+(5000ms) > 1B 40 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 F0 90 7C 00 91 E0 
+> C9 31 D9 07 10 F0 C8 E1 D1 E0 CC 24 DD 24 CC 16 
+> DD 06 A0 F5 0B E7 10 E0 A8 95 66 20 29 F0 C0 FE 
+> 03 C0 8F 2D 88 60 01 C0 8F 2D 43 D3 80 91 72 00 
+> 90 91 73 00 80 D3 80 E0 3C D3 
+(5000ms) > F5 
+Sequence number 64, message size 74, checksum 245
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.687
+(5000ms) < 1B 40 00 02 0E 
+(4984ms) < 13 00 44 
+Sequence number 64, message size 2, checksum 68
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.703
+(5000ms) > 1B 41 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 D8 01 8C 93 66 20 
+> 11 F0 C0 FE 13 C0 80 91 72 00 90 91 73 00 A0 91 
+> 74 00 B0 91 75 00 01 96 A1 1D B1 1D 80 93 72 00 
+> 90 93 73 00 A0 93 74 00 B0 93 75 00 08 94 C1 1C 
+> D1 1C 0F 5F 1F 4F CC 16 DD 06 
+(5000ms) > B3 
+Sequence number 65, message size 74, checksum 179
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.718
+(5000ms) < 1B 41 00 02 0E 
+(5000ms) < 13 00 45 
+Sequence number 65, message size 2, checksum 69
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.718
+(5000ms) > 1B 42 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 70 F2 8E 01 0D 5F 
+> 1F 4F 10 92 7A 00 C7 58 DF 4F 1A 82 78 C0 80 91 
+> 7A 00 0F D3 80 91 7B 00 0C D3 80 91 7C 00 09 D3 
+> 80 91 7D 00 06 D3 03 E0 10 E0 10 92 7A 00 10 92 
+> 7B 00 65 C0 0B E7 10 E0 C0 E0 
+(5000ms) > 69 
+Sequence number 66, message size 74, checksum 105
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.734
+(5000ms) < 1B 42 00 02 0E 
+(4984ms) < 13 00 46 
+Sequence number 66, message size 2, checksum 70
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.750
+(5000ms) > 1B 43 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 D0 E0 23 E0 E2 2E 
+> F8 01 81 91 8F 01 F5 D2 F8 2E 80 91 7A 00 99 27 
+> 21 96 8C 17 9D 07 11 F4 F0 92 7B 00 85 E0 90 E0 
+> 5B D3 EA 94 E7 FE EC CF 04 E0 10 E0 10 92 7A 00 
+> 10 92 7C 00 44 C0 F0 90 7B 00 
+(5000ms) > 55 
+Sequence number 67, message size 74, checksum 85
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.750
+(5000ms) < 1B 43 00 02 0E 
+(4985ms) < 13 00 47 
+Sequence number 67, message size 2, checksum 71
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.765
+(5000ms) > 1B 44 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 70 90 7C 00 EE 24 
+> CE 2D 80 91 7A 00 E8 16 00 F5 85 E0 90 E0 44 D3 
+> C7 15 80 F0 EF 14 70 F4 0E 2D 11 27 07 58 1F 4F 
+> EC 2F FF 27 E7 58 FF 4F 84 81 C3 D2 F8 01 82 83 
+> E3 94 06 C0 EC 2F FF 27 E7 58 
+(5000ms) > 4D 
+Sequence number 68, message size 74, checksum 77
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.765
+(5000ms) < 1B 44 00 02 0E 
+(4984ms) < 13 00 40 
+Sequence number 68, message size 2, checksum 64
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.781
+(5000ms) > 1B 45 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 FF 4F 84 81 B9 D2 
+> CF 5F 80 91 7A 00 C8 17 00 F3 EF 14 40 F4 EE 2D 
+> FF 27 E5 58 FF 4F 11 92 E3 94 EF 14 E0 F3 EE 2D 
+> FF 27 8F 01 0D 5F 1F 4F 10 92 7A 00 E7 58 FF 4F 
+> 12 82 05 C0 02 E0 10 E0 89 EC 
+(5000ms) > 3F 
+Sequence number 69, message size 74, checksum 63
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.796
+(5000ms) < 1B 45 00 02 0E 
+(4985ms) < 13 00 41 
+Sequence number 69, message size 2, checksum 65
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.812
+(5000ms) > 1B 46 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 93 7A 00 B8 01 
+> 85 2D D0 DB EF E0 CD B7 DE B7 C6 C4 EF 92 FF 92 
+> 0F 93 1F 93 CF 93 11 E0 F1 2E C2 E0 EC 2E 1F EF 
+> 81 11 FE 2C 81 E0 D8 D1 C8 2F 8D 30 D1 F1 8A 30 
+> C1 F1 0C 2F 00 53 0A 30 38 F0 
+(5000ms) > 65 
+Sequence number 70, message size 74, checksum 101
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.812
+(5000ms) < 1B 46 00 02 0E 
+(4984ms) < 13 00 42 
+Sequence number 70, message size 2, checksum 66
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.828
+(5000ms) > 1B 47 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 8C 2F 81 54 86 30 
+> 18 F0 80 52 86 30 20 F5 1F 3F 09 F4 10 E0 8C 2F 
+> 94 D1 0A 30 28 F4 12 95 10 7F 1C 0F 10 53 17 C0 
+> 8C 2F 81 54 21 2F 33 27 86 30 48 F4 B4 E0 22 0F 
+> 33 1F BA 95 E1 F7 1C 2F 12 0F 
+(5000ms) > CC 
+Sequence number 71, message size 74, checksum 204
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.828
+(5000ms) < 1B 47 00 02 0E 
+(4984ms) < 13 00 43 
+Sequence number 71, message size 2, checksum 67
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.843
+(5000ms) > 1B 48 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 17 53 08 C0 A4 E0 
+> 22 0F 33 1F AA 95 E1 F7 1C 2F 12 0F 17 55 EA 94 
+> 81 E0 A2 D1 C8 2F 8D 30 21 F0 8A 30 11 F0 EE 20 
+> 41 F6 CD 30 11 F0 CA 30 09 F4 FA 94 FF 20 19 F0 
+> 81 E0 92 D1 FA CF 81 2F 99 27 
+(5000ms) > 31 
+Sequence number 72, message size 74, checksum 49
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.859
+(5000ms) < 1B 48 00 02 0E 
+(5000ms) < 13 00 4C 
+Sequence number 72, message size 2, checksum 76
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.859
+(5000ms) > 1B 49 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 CF 91 1F 91 0F 91 
+> FF 90 EF 90 08 95 8B E1 58 D1 85 E4 56 D1 08 95 
+> 0F 93 1F 93 CF 93 C8 2F 84 EA 90 E0 60 D1 83 EB 
+> 90 E0 5D D1 80 EC 90 E0 5A D1 89 ED 90 E0 57 D1 
+> 80 91 AA 01 40 E1 50 E0 69 E7 
+(5000ms) > D6 
+Sequence number 73, message size 74, checksum 214
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.875
+(5000ms) < 1B 49 00 02 0E 
+(4985ms) < 13 00 4D 
+Sequence number 73, message size 2, checksum 77
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.890
+(5000ms) > 1B 4A 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 70 E0 99 27 EA D3 
+> 89 E7 90 E0 3E D1 89 EF 90 E0 49 D1 8C 2F 7E DF 
+> 8F 3F 11 F0 80 93 AA 01 D6 DF 8D EF 90 E0 3F D1 
+> 80 91 AB 01 40 E1 50 E0 69 E7 70 E0 99 27 D2 D3 
+> 89 E7 90 E0 26 D1 8D E1 91 E0 
+(5000ms) > B7 
+Sequence number 74, message size 74, checksum 183
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.890
+(5000ms) < 1B 4A 00 02 0E 
+(4984ms) < 13 00 4E 
+Sequence number 74, message size 2, checksum 78
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.906
+(5000ms) > 1B 4B 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 31 D1 8C 2F 66 DF 
+> 8F 3F 11 F0 80 93 AB 01 BE DF 81 E2 91 E0 27 D1 
+> 83 D3 4A E0 50 E0 69 E7 70 E0 99 27 BB D3 89 E7 
+> 90 E0 0F D1 86 E5 91 E0 1A D1 8C 2F 4F DF 08 2F 
+> 8F 3F 31 F0 81 E0 74 D3 00 23 
+(5000ms) > B3 
+Sequence number 75, message size 74, checksum 179
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.906
+(5000ms) < 1B 4B 00 02 0E 
+(4984ms) < 13 00 4F 
+Sequence number 75, message size 2, checksum 79
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.921
+(5000ms) > 1B 4C 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 11 F4 80 2F 70 D3 
+> A2 DF 03 E0 10 E0 68 D3 D8 01 08 2E 39 D4 A1 E0 
+> B0 E0 80 91 AB 01 08 2E 33 D4 A2 E0 B0 E0 80 91 
+> AA 01 08 2E 2D D4 A0 E0 B0 E0 84 E1 08 2E 28 D4 
+> 8A E5 91 E0 F4 D0 80 91 AA 01 
+(5000ms) > 25 
+Sequence number 76, message size 74, checksum 37
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.937
+(5000ms) < 1B 4C 00 02 0E 
+(5000ms) < 13 00 48 
+Sequence number 76, message size 2, checksum 72
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.937
+(5000ms) > 1B 4D 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 40 E1 50 E0 69 E7 
+> 70 E0 99 27 87 D3 89 E7 90 E0 DB D0 8E E2 D5 D0 
+> 80 91 AB 01 80 31 10 F4 80 E3 CF D0 80 91 AB 01 
+> 40 E1 50 E0 69 E7 70 E0 99 27 74 D3 89 E7 90 E0 
+> C8 D0 87 E7 91 E0 D3 D0 80 E8 
+(5000ms) > E3 
+Sequence number 77, message size 74, checksum 227
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.953
+(5000ms) < 1B 4D 00 02 0E 
+(4984ms) < 13 00 49 
+Sequence number 77, message size 2, checksum 73
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.968
+(5000ms) > 1B 4E 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 91 E0 D0 D0 CF 91 
+> 1F 91 0F 91 08 95 CF E5 D4 E0 DE BF CD BF DD 24 
+> BD 2C CD 2C C0 E0 D0 E0 7E 01 84 E6 90 E0 FC D1 
+> 52 D3 83 E0 47 D3 9F D0 09 D2 BA 9A C2 9A 8F 9A 
+> 97 98 78 94 84 E0 80 93 AB 01 
+(5000ms) > FD 
+Sequence number 78, message size 74, checksum 253
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.968
+(5000ms) < 1B 4E 00 02 0E 
+(4985ms) < 13 00 4A 
+Sequence number 78, message size 2, checksum 74
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:29.984
+(5000ms) > 1B 4F 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 82 E0 80 93 AA 01 
+> A0 E0 B0 E0 D5 D3 80 2D 84 31 89 F4 A1 E0 B0 E0 
+> CF D3 80 2D 80 93 AB 01 A2 E0 B0 E0 C9 D3 80 2D 
+> 80 93 AA 01 A3 E0 B0 E0 C3 D3 80 2D F9 D2 81 E0 
+> B3 D0 04 C0 80 E0 B0 D0 11 23 
+(5000ms) > E7 
+Sequence number 79, message size 74, checksum 231
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:29.984
+(5000ms) < 1B 4F 00 02 0E 
+(4984ms) < 13 00 4B 
+Sequence number 79, message size 2, checksum 75
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.000
+(5000ms) > 1B 50 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 21 F5 8B 31 19 F4 
+> 11 E0 08 2F F7 CF 8D 30 19 F0 8A 30 09 F0 65 C0 
+> 21 96 BB 20 39 F4 8A 30 29 F4 9D E0 D9 16 11 F4 
+> 31 E0 B3 2E D8 2E BB 20 29 F0 C4 30 D1 05 F9 F6 
+> 81 E0 04 C0 C2 30 D1 05 D1 F6 
+(5000ms) > 59 
+Sequence number 80, message size 74, checksum 89
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.015
+(5000ms) < 1B 50 00 02 0E 
+(4984ms) < 13 00 54 
+Sequence number 80, message size 2, checksum 84
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.031
+(5000ms) > 1B 51 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 8B 2D 09 DF C0 E0 
+> D0 E0 D5 CF 11 30 21 F4 C8 2E 08 27 12 E0 D2 CF 
+> 12 30 31 F4 08 27 99 27 F8 2E EE 24 13 E0 CA CF 
+> 13 30 31 F4 08 27 99 27 E8 2A F9 2A 14 E0 C2 CF 
+> 14 30 41 F4 08 27 8E 30 09 F0 
+(5000ms) > 77 
+Sequence number 81, message size 74, checksum 119
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.031
+(5000ms) < 1B 51 00 02 0E 
+(4984ms) < 13 00 55 
+Sequence number 81, message size 2, checksum 85
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.046
+(5000ms) > 1B 52 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 B9 CF 15 E0 C0 E0 
+> D0 E0 B8 CF 15 30 A1 F4 CE 15 DF 05 34 F5 91 E0 
+> C8 31 D9 07 14 F5 08 27 FE 01 E7 58 FF 4F 80 83 
+> 21 96 A8 95 CE 15 DF 05 09 F0 A4 CF 16 E0 A2 CF 
+> 16 30 99 F4 80 17 39 F4 1E 14 
+(5000ms) > 80 
+Sequence number 82, message size 74, checksum 128
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.046
+(5000ms) < 1B 52 00 02 0E 
+(4985ms) < 13 00 56 
+Sequence number 82, message size 2, checksum 86
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.062
+(5000ms) > 1B 53 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 1F 04 24 F4 A8 95 
+> 8C 2D 7B DA 0A C0 80 EB 80 93 79 00 81 EC 80 93 
+> 7A 00 62 E0 70 E0 8C 2D 25 DA EE 24 FF 24 DD 24 
+> CD 2C E7 01 84 CF 10 BC 87 E0 90 E0 89 B9 88 E1 
+> 8A B9 86 E8 80 BD 6E D1 08 95 
+(5000ms) > 56 
+Sequence number 83, message size 74, checksum 86
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.078
+(5000ms) < 1B 53 00 02 0E 
+(5000ms) < 13 00 57 
+Sequence number 83, message size 2, checksum 87
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.078
+(5000ms) > 1B 54 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 5D 9B FE CF 8C B9 
+> 08 95 CF 93 DF 93 EC 01 88 81 88 23 29 F0 89 91 
+> F4 DF 88 81 88 23 D9 F7 DF 91 CF 91 08 95 CF 93 
+> DF 93 EC 01 FC 01 21 96 84 91 88 23 31 F0 E5 DF 
+> FE 01 21 96 84 91 88 23 D1 F7 
+(5000ms) > E9 
+Sequence number 84, message size 74, checksum 233
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.093
+(5000ms) < 1B 54 00 02 0E 
+(4985ms) < 13 00 50 
+Sequence number 84, message size 2, checksum 80
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.109
+(5000ms) > 1B 55 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 DF 91 CF 91 08 95 
+> CF 93 C8 2F 5F 99 04 C0 C1 11 42 D1 5F 9B FC CF 
+> 8C B1 99 27 CF 91 08 95 0F 93 1F 93 CF 93 08 2F 
+> C0 E0 1C 2F 5F 99 31 C0 01 11 32 D1 6C D1 00 97 
+> 39 F4 C0 E0 1C 2F 90 93 A1 01 
+(5000ms) > 0A 
+Sequence number 85, message size 74, checksum 10
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.109
+(5000ms) < 1B 55 00 02 0E 
+(4984ms) < 13 00 51 
+Sequence number 85, message size 2, checksum 81
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.125
+(5000ms) > 1B 56 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 93 A0 01 23 C0 
+> CC 23 F9 F4 C6 E9 80 E0 15 D2 90 93 A1 01 80 93 
+> A0 01 07 D2 90 93 A1 01 80 93 A0 01 0A 97 1C F4 
+> 81 E0 3E D1 0E C0 4F D1 02 97 59 F0 11 23 41 F4 
+> 12 E3 19 D2 88 23 11 F0 82 E0 
+(5000ms) > CE 
+Sequence number 86, message size 74, checksum 206
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.125
+(5000ms) < 1B 56 00 02 0E 
+(4985ms) < 13 00 52 
+Sequence number 86, message size 2, checksum 82
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.140
+(5000ms) > 1B 57 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 01 C0 83 E0 30 D1 
+> 11 50 45 D1 C1 50 5F 9B CF CF 8C B1 99 27 CF 91 
+> 1F 91 0F 91 08 95 5F 9B 03 C0 8C B1 5F 99 FD CF 
+> 08 95 10 92 A2 01 83 30 48 F0 81 E0 80 93 A2 01 
+> 8C E0 80 93 6A 00 8C E0 90 E0 
+(5000ms) > 11 
+Sequence number 87, message size 74, checksum 17
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.156
+(5000ms) < 1B 57 00 02 0E 
+(5000ms) < 13 00 53 
+Sequence number 87, message size 2, checksum 83
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.156
+(5000ms) > 1B 58 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 08 95 82 30 48 F0 
+> 70 98 69 9A 68 9A 82 E0 80 93 6A 00 82 E0 90 E0 
+> 08 95 81 30 41 F4 70 98 69 9A 68 98 80 93 6A 00 
+> 81 E0 90 E0 08 95 88 23 41 F4 70 98 69 98 68 9A 
+> 80 93 6A 00 80 E0 90 E0 08 95 
+(5000ms) > DD 
+Sequence number 88, message size 74, checksum 221
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.171
+(5000ms) < 1B 58 00 02 0E 
+(4985ms) < 13 00 5C 
+Sequence number 88, message size 2, checksum 92
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.187
+(5000ms) > 1B 59 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 81 E0 90 E0 08 95 
+> 80 91 6A 00 99 27 08 95 2D B1 1D B8 C5 98 80 E7 
+> 91 E0 FC 01 31 97 F1 F7 C5 9A 01 97 F1 F7 C5 98 
+> 2D B9 08 95 C0 9A 80 E7 91 E0 01 97 F1 F7 C0 98 
+> 84 E1 90 E0 91 D0 08 95 B8 9A 
+(5000ms) > 22 
+Sequence number 89, message size 74, checksum 34
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.187
+(5000ms) < 1B 59 00 02 0E 
+(4984ms) < 13 00 5D 
+Sequence number 89, message size 2, checksum 93
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.203
+(5000ms) > 1B 5A 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 C0 9A BB 9A C3 98 
+> BD 9A C5 98 89 E1 90 E0 87 D0 B8 9A C0 9A 89 E1 
+> 90 E0 82 D0 80 91 A2 01 88 23 29 F4 83 E5 8D B9 
+> 80 91 6A 00 9E DF C0 98 84 E1 90 E0 75 D0 DA DF 
+> 08 95 CF 93 DF 93 98 2F 70 E0 
+(5000ms) > E2 
+Sequence number 90, message size 74, checksum 226
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.203
+(5000ms) < 1B 5A 00 02 0E 
+(4984ms) < 13 00 5E 
+Sequence number 90, message size 2, checksum 94
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.218
+(5000ms) > 1B 5B 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 80 91 A2 01 88 23 
+> 31 F4 9F B9 77 9B FE CF 8F B1 99 27 31 C0 C5 98 
+> 67 E0 49 2F 55 27 A0 E7 B1 E0 C0 E0 D0 E0 E1 E0 
+> F0 E0 27 E0 30 E0 CA 01 02 2E 02 C0 95 95 87 95 
+> 0A 94 E2 F7 80 FF 02 C0 C3 9A 
+(5000ms) > EF 
+Sequence number 91, message size 74, checksum 239
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.234
+(5000ms) < 1B 5B 00 02 0E 
+(5000ms) < 13 00 5F 
+Sequence number 91, message size 2, checksum 95
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.234
+(5000ms) > 1B 5C 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 01 C0 C3 98 CD 01 
+> 01 97 F1 F7 C5 9A CD 01 01 97 F1 F7 C5 98 B4 9B 
+> 08 C0 CF 01 02 2E 02 C0 88 0F 99 1F 0A 94 E2 F7 
+> 78 2B 61 50 21 50 30 40 67 FF DD CF 87 2F 99 27 
+> DF 91 CF 91 08 95 0F 93 1F 93 
+(5000ms) > 9F 
+Sequence number 92, message size 74, checksum 159
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.250
+(5000ms) < 1B 5C 00 02 0E 
+(4985ms) < 13 00 58 
+Sequence number 92, message size 2, checksum 88
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.265
+(5000ms) > 1B 5D 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 8C 01 81 2F 99 27 
+> B8 DF 80 2F B6 DF 99 27 1F 91 0F 91 08 95 EF 92 
+> FF 92 0F 93 1F 93 7B 01 8C 01 89 2F 99 27 AA 27 
+> BB 27 A7 DF C8 01 AA 27 BB 27 A3 DF BB 27 A1 2F 
+> 90 2F 8F 2D 9E DF 8E 2D 9C DF 
+(5000ms) > AA 
+Sequence number 93, message size 74, checksum 170
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.265
+(5000ms) < 1B 5D 00 02 0E 
+(4984ms) < 13 00 59 
+Sequence number 93, message size 2, checksum 89
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.281
+(5000ms) > 1B 5E 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 99 27 1F 91 0F 91 
+> FF 90 EF 90 08 95 1D B8 C0 9A BB 98 C3 98 BD 98 
+> C5 98 B8 98 C0 98 08 95 CF 93 DF 93 9C 01 89 2B 
+> 51 F0 A2 ED BD E0 C0 E0 D0 E0 CD 01 01 97 F1 F7 
+> 21 50 30 40 D1 F7 DF 91 CF 91 
+(5000ms) > F4 
+Sequence number 94, message size 74, checksum 244
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.281
+(5000ms) < 1B 5E 00 02 0E 
+(4984ms) < 13 00 5A 
+Sequence number 94, message size 2, checksum 90
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.296
+(5000ms) > 1B 5F 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 08 95 88 E1 90 E0 
+> 2F E0 0F B6 F8 94 A8 95 81 BD 0F BE 21 BD 08 95 
+> A8 95 08 95 B9 9A 81 E0 80 93 6C 00 1D BC 1C BC 
+> 83 EC 8F BD 8C E0 8E BD 80 91 A3 01 90 91 A4 01 
+> 89 2F 99 27 8B BD 80 91 A3 01 
+(5000ms) > 10 
+Sequence number 95, message size 74, checksum 16
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.312
+(5000ms) < 1B 5F 00 02 0E 
+(5000ms) < 13 00 5B 
+Sequence number 95, message size 2, checksum 91
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.312
+(5000ms) > 1B 60 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 8A BD 08 95 80 91 
+> A5 01 90 91 A6 01 00 97 51 F0 00 00 00 00 00 00 
+> 01 97 90 93 A6 01 80 93 A5 01 81 E0 90 E0 08 95 
+> 98 2F 80 91 6C 00 98 17 69 F0 90 93 6C 00 99 23 
+> 49 F4 10 92 A4 01 10 92 A3 01 
+(5000ms) > 21 
+Sequence number 96, message size 74, checksum 33
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.328
+(5000ms) < 1B 60 00 02 0E 
+(4984ms) < 13 00 64 
+Sequence number 96, message size 2, checksum 100
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.343
+(5000ms) > 1B 61 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 81 E0 80 93 6B 00 
+> 9B BD 9A BD 08 95 80 91 6C 00 99 27 08 95 D7 DF 
+> 28 2F 88 23 09 F0 84 C0 80 E9 91 E0 90 93 A6 01 
+> 80 93 A5 01 80 91 6C 00 81 30 09 F0 4C C0 80 91 
+> 6B 00 20 91 A3 01 30 91 A4 01 
+(5000ms) > 08 
+Sequence number 97, message size 74, checksum 8
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.343
+(5000ms) < 1B 61 00 02 0E 
+(4985ms) < 13 00 65 
+Sequence number 97, message size 2, checksum 101
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.359
+(5000ms) > 1B 62 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 81 30 19 F4 2F 5F 
+> 3F 4F 26 C0 20 39 31 05 30 F4 88 E5 92 E0 90 93 
+> A6 01 80 93 A5 01 20 34 31 05 30 F4 80 E2 93 E0 
+> 90 93 A6 01 80 93 A5 01 20 32 31 05 30 F4 80 ED 
+> 97 E0 90 93 A6 01 80 93 A5 01 
+(5000ms) > 44 
+Sequence number 98, message size 74, checksum 68
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.375
+(5000ms) < 1B 62 00 02 0E 
+(5000ms) < 13 00 66 
+Sequence number 98, message size 2, checksum 102
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.375
+(5000ms) > 1B 63 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 20 31 31 05 30 F4 
+> 88 E8 93 E1 90 93 A6 01 80 93 A5 01 21 50 30 40 
+> 30 93 A4 01 20 93 A3 01 80 91 A3 01 90 91 A4 01 
+> 8F 3F 91 05 49 F0 40 F0 8F EF 90 E0 90 93 A4 01 
+> 80 93 A3 01 10 92 6B 00 80 91 
+(5000ms) > 24 
+Sequence number 99, message size 74, checksum 36
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.390
+(5000ms) < 1B 63 00 02 0E 
+(4984ms) < 13 00 67 
+Sequence number 99, message size 2, checksum 103
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.406
+(5000ms) > 1B 64 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 A3 01 90 91 A4 01 
+> 02 97 20 F5 15 C0 83 30 69 F4 80 E4 9F E1 90 93 
+> A6 01 80 93 A5 01 80 91 A3 01 90 91 A4 01 89 2B 
+> 69 F0 02 C0 88 23 41 F4 10 92 A4 01 10 92 A3 01 
+> 81 E0 80 93 6B 00 0A C0 82 30 
+(5000ms) > 32 
+Sequence number 100, message size 74, checksum 50
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.406
+(5000ms) < 1B 64 00 02 0E 
+(4984ms) < 13 00 60 
+Sequence number 100, message size 2, checksum 96
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.421
+(5000ms) > 1B 65 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 41 F4 8F EF 93 E0 
+> 90 93 A4 01 80 93 A3 01 20 93 6B 00 80 91 A3 01 
+> 90 91 A4 01 89 2F 99 27 8B BD 80 91 A3 01 8A BD 
+> 08 95 1F 92 0F 92 0F B6 0F 92 11 24 2F 93 3F 93 
+> 8F 93 9F 93 24 B1 85 B1 99 27 
+(5000ms) > 46 
+Sequence number 101, message size 74, checksum 70
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.421
+(5000ms) < 1B 65 00 02 0E 
+(4985ms) < 13 00 61 
+Sequence number 101, message size 2, checksum 97
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.437
+(5000ms) > 1B 66 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 98 2F 88 27 33 27 
+> 82 2B 93 2B 90 93 A9 01 80 93 A8 01 10 92 A7 01 
+> 9F 91 8F 91 3F 91 2F 91 0F 90 0F BE 0F 90 1F 90 
+> 18 95 88 0F 99 1F 88 0F 99 1F 62 E3 70 E0 82 D0 
+> CB 01 08 95 91 E0 90 93 A7 01 
+(5000ms) > 49 
+Sequence number 102, message size 74, checksum 73
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.453
+(5000ms) < 1B 66 00 02 0E 
+(5000ms) < 13 00 62 
+Sequence number 102, message size 2, checksum 98
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.453
+(5000ms) > 1B 67 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 87 70 80 6C 87 B9 
+> 8F E9 86 B9 36 9A 80 91 A7 01 88 23 E1 F7 80 91 
+> A8 01 90 91 A9 01 08 95 80 91 6D 00 99 27 08 95 
+> 80 93 6D 00 08 95 0F 93 1F 93 80 91 6D 00 88 23 
+> C9 F0 97 98 B8 98 C0 98 80 E0 
+(5000ms) > 10 
+Sequence number 103, message size 74, checksum 16
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.468
+(5000ms) < 1B 67 00 02 0E 
+(4985ms) < 13 00 63 
+Sequence number 103, message size 2, checksum 99
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.484
+(5000ms) > 1B 68 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 DC DF D2 DF 8C 01 
+> B8 9A 97 9A C0 98 85 E0 90 E0 C6 DE 80 E0 D2 DF 
+> C8 DF 9C 01 97 98 B8 98 C0 98 80 2F 62 2F 3E D0 
+> 84 30 18 F0 81 E0 90 E0 02 C0 80 E0 90 E0 1F 91 
+> 0F 91 08 95 98 2F 97 70 99 0F 
+(5000ms) > AD 
+Sequence number 104, message size 74, checksum 173
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.484
+(5000ms) < 1B 68 00 02 0E 
+(4984ms) < 13 00 6C 
+Sequence number 104, message size 2, checksum 108
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.500
+(5000ms) > 1B 69 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 99 0F 82 B3 83 7E 
+> 89 2B 82 BB 08 95 81 B3 8C 61 81 BB 92 98 93 98 
+> 94 98 08 95 FB 01 9F 01 42 30 6C F0 45 32 5C F4 
+> 64 2F 77 27 71 D0 80 5D 8A 33 0C F0 89 5D 81 93 
+> CB 01 00 97 A9 F7 10 82 C9 01 
+(5000ms) > DC 
+Sequence number 105, message size 74, checksum 220
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.515
+(5000ms) < 1B 69 00 02 0E 
+(4984ms) < 13 00 6D 
+Sequence number 105, message size 2, checksum 109
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.531
+(5000ms) > 1B 6A 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 00 C0 DC 01 FC 01 
+> 01 90 00 20 E9 F7 32 97 AE 17 BF 07 30 F4 7C 91 
+> 60 81 70 83 31 97 6D 93 F7 CF 08 95 99 1B 79 E0 
+> 04 C0 99 1F 96 17 08 F0 96 1B 88 1F 7A 95 C9 F7 
+> 80 95 08 95 97 FB 09 2E 07 26 
+(5000ms) > 3A 
+Sequence number 106, message size 74, checksum 58
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.531
+(5000ms) < 1B 6A 00 02 0E 
+(4984ms) < 13 00 6E 
+Sequence number 106, message size 2, checksum 110
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.546
+(5000ms) > 1B 6B 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 0A D0 77 FD 04 D0 
+> 43 D0 06 D0 00 20 1A F4 70 95 61 95 7F 4F 08 95 
+> F6 F7 90 95 81 95 9F 4F 08 95 2F 92 3F 92 4F 92 
+> 5F 92 6F 92 7F 92 8F 92 9F 92 AF 92 BF 92 CF 92 
+> DF 92 EF 92 FF 92 0F 93 1F 93 
+(5000ms) > F1 
+Sequence number 107, message size 74, checksum 241
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.546
+(5000ms) < 1B 6B 00 02 0E 
+(4985ms) < 13 00 6F 
+Sequence number 107, message size 2, checksum 111
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.562
+(5000ms) > 1B 6C 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 CF 93 DF 93 CD B7 
+> DE B7 CA 1B DB 0B 0F B6 F8 94 DE BF 0F BE CD BF 
+> 09 94 2A 88 39 88 48 88 5F 84 6E 84 7D 84 8C 84 
+> 9B 84 AA 84 B9 84 C8 84 DF 80 EE 80 FD 80 0C 81 
+> 1B 81 AA 81 B9 81 CE 0F D1 1D 
+(5000ms) > E6 
+Sequence number 108, message size 74, checksum 230
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.578
+(5000ms) < 1B 6C 00 02 0E 
+(5000ms) < 13 00 68 
+Sequence number 108, message size 2, checksum 104
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.578
+(5000ms) > 1B 6D 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 0F B6 F8 94 DE BF 
+> 0F BE CD BF ED 01 08 95 AA 1B BB 1B 51 E1 07 C0 
+> AA 1F BB 1F A6 17 B7 07 10 F0 A6 1B B7 0B 88 1F 
+> 99 1F 5A 95 A9 F7 80 95 90 95 BC 01 CD 01 08 95 
+> E1 99 FE CF BF BB AE BB E0 9A 
+(5000ms) > D6 
+Sequence number 109, message size 74, checksum 214
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.593
+(5000ms) < 1B 6D 00 02 0E 
+(4985ms) < 13 00 69 
+Sequence number 109, message size 2, checksum 105
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.609
+(5000ms) > 1B 6E 00 4A 0E 
+(5000ms) > 13 00 40 A1 0A 40 4C 20 FF 00 11 96 0D B2 08 95 
+> E1 99 FE CF BF BB AE BB 0D BA 11 96 0F B6 F8 94 
+> E2 9A E1 9A 0F BE 08 95 01 41 56 52 49 53 50 5F 
+> 32 00 01 01 01 01 FF FF FF FF FF FF FF FF FF FF 
+> FF FF FF FF FF FF FF FF FF FF 
+(5000ms) > 4E 
+Sequence number 110, message size 74, checksum 78
+CMD_PROGRAM_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.609
+(5000ms) < 1B 6E 00 02 0E 
+(4984ms) < 13 00 6A 
+Sequence number 110, message size 2, checksum 106
+CMD_PROGRAM_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.625
+(1000ms) > 1B 6F 00 05 0E 
+(1000ms) > 06 00 00 00 00 
+(1000ms) > 79 
+Sequence number 111, message size 5, checksum 121
+CMD_LOAD_ADDRESS
+
+Receiving packet 11/28/2006 21:26:30.625
+(1000ms) < 1B 6F 00 02 0E 
+(1000ms) < 06 00 7E 
+Sequence number 111, message size 2, checksum 126
+CMD_LOAD_ADDRESS
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.625
+(5000ms) > 1B 70 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 54 
+Sequence number 112, message size 4, checksum 84
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.625
+(5000ms) < 1B 70 01 03 0E 
+(5000ms) < 14 00 D9 C0 F2 C0 F1 C0 F0 C0 EF C0 EE C0 ED C0 
+(5000ms) < EC C0 EB C0 EA C0 E9 C0 E8 C0 E7 C0 E6 C0 05 C9 
+(4985ms) < E4 C0 E3 C0 E2 C0 E1 C0 42 C1 55 C1 6B C1 06 C5 
+(4985ms) < B0 C2 BD C1 E5 C2 02 C5 01 C5 83 C2 FF C4 FE C4 
+(4985ms) < FD C4 FC C4 FB C4 E7 C1 7C C2 7D C2 A8 C2 2F C4 
+(4985ms) < A5 C2 2C C4 80 C4 92 C4 7E C4 90 C4 8F C4 8E C4 
+(4985ms) < AE C4 8C C1 81 C1 EA C4 E9 C4 E8 C4 E7 C4 E6 C4 
+(4985ms) < E5 C4 E4 C4 E3 C4 E2 C4 E1 C4 E0 C4 DF C4 DE C4 
+(4985ms) < DD C4 6F C1 4E C1 50 C1 D9 C4 51 C1 5E C1 69 C1 
+(4985ms) < 6B C1 5E C1 D3 C4 6B C1 D1 C4 D0 C4 6F C1 5B C1 
+(4985ms) < 5D C1 CC C4 67 C1 1B 5B 30 6D 1B 5B 32 4A 1B 5B 
+(4985ms) < 30 3B 30 66 00 76 65 72 73 69 6F 6E 3A 20 31 2E 
+(4969ms) < 37 00 2C 20 74 65 72 6D 69 6E 61 6C 20 63 6F 6E 
+(4969ms) < 66 69 67 20 6D 6F 64 65 0D 0A 00 45 6E 74 65 72 
+(4969ms) < 20 53 57 20 56 65 72 73 69 6F 6E 20 4D 61 6A 6F 
+(4969ms) < 72 20 69 6E 20 68 65 78 20 5B 00 5D 3A 20 00 45 
+(4969ms) < 6E 74 00 B1 
+Sequence number 112, message size 259, checksum 177
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.656
+(5000ms) > 1B 71 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 55 
+Sequence number 113, message size 4, checksum 85
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.656
+(5000ms) < 1B 71 01 03 0E 
+(5000ms) < 14 00 65 72 20 53 57 20 56 65 72 73 69 6F 6E 20 
+(5000ms) < 4D 69 6E 6F 72 20 69 6E 20 68 65 78 20 5B 00 5D 
+(5000ms) < 3A 20 00 52 65 73 65 74 20 74 61 72 67 65 74 20 
+(5000ms) < 61 74 20 63 6F 6E 6E 65 63 74 6F 72 20 70 6F 6C 
+(4984ms) < 61 72 69 74 79 20 74 65 73 74 28 31 3D 6F 6E 20 
+(4984ms) < 30 3D 6F 66 66 29 5B 00 5D 3A 20 00 0D 0A 4F 4B 
+(4984ms) < 2C 20 6D 79 20 53 57 20 76 65 72 73 69 6F 6E 20 
+(4984ms) < 69 73 20 6E 6F 77 3A 20 00 20 28 68 65 78 29 0D 
+(4984ms) < 0A 00 52 65 61 64 79 2E 20 4A 75 73 74 20 63 6C 
+(4984ms) < 6F 73 65 20 74 68 65 20 74 65 72 6D 69 6E 61 6C 
+(4984ms) < 2E 20 4E 6F 20 72 65 73 65 74 20 6E 65 65 64 65 
+(4984ms) < 64 2E 0D 0A 00 00 11 24 1F BE CF E5 D4 E0 DE BF 
+(4984ms) < CD BF 10 E0 A0 E6 B0 E0 EE E5 F4 E1 02 C0 05 90 
+(4984ms) < 0D 92 AE 36 B1 07 D9 F7 11 E0 AE E6 B0 E0 01 C0 
+(4969ms) < 1D 92 AC 3A B1 07 E1 F7 32 C5 0B CF A0 E0 B0 E0 
+(4969ms) < EA EF F0 E0 E1 C8 18 2F EB 01 CB 01 01 97 8D 51 
+(4969ms) < 91 40 00 95 
+Sequence number 113, message size 259, checksum 149
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.687
+(5000ms) > 1B 72 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 56 
+Sequence number 114, message size 4, checksum 86
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.687
+(5000ms) < 1B 72 01 03 0E 
+(5000ms) < 14 00 28 F0 C2 E0 D0 E0 80 EC 80 93 7A 00 8B E1 
+(5000ms) < D8 D5 9B E1 D9 2E 81 2F D4 D5 D1 26 8D 2F 99 27 
+(5000ms) < 18 2F CF D5 D1 26 8C 2F CC D5 DC 26 8E E0 C9 D5 
+(5000ms) < 8E E0 D8 26 A8 95 EE 24 FF 24 EC 16 FD 06 78 F4 
+(5000ms) < 09 E7 10 E0 F8 01 80 81 BC D5 F8 01 81 91 8F 01 
+(5000ms) < D8 26 08 94 E1 1C F1 1C EC 16 FD 06 98 F3 8D 2D 
+(4984ms) < B0 D5 E7 E0 CD B7 DE B7 C3 C8 F1 D6 C2 9A 10 92 
+(4984ms) < 76 00 81 E0 39 D7 97 98 10 92 77 00 83 E0 3E D8 
+(4984ms) < 08 95 A0 E0 B0 E0 E5 E4 F1 E0 8E C8 58 2E F1 E0 
+(4984ms) < 6F 2E 80 91 79 00 99 27 AA 27 BB 27 FC 01 31 97 
+(4984ms) < ED 31 F1 05 08 F0 CA C3 ED 5E FF 4F 09 94 81 E0 
+(4984ms) < 80 93 79 00 10 92 7A 00 88 E0 80 93 7B 00 89 E0 
+(4984ms) < A1 E6 B0 E0 EC E7 F0 E0 0D 90 01 92 8A 95 E1 F7 
+(4984ms) < 0B E0 10 E0 B8 C3 80 91 7A 00 88 39 21 F4 80 91 
+(4984ms) < 7B 00 E3 D5 56 C1 8E 39 29 F4 80 91 7B 00 80 93 
+(4968ms) < 60 00 4F C1 8F 39 09 F0 4C C1 80 91 7B 00 80 93 
+(4968ms) < 78 00 00 B5 
+Sequence number 114, message size 259, checksum 181
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.718
+(5000ms) > 1B 73 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 57 
+Sequence number 115, message size 4, checksum 87
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.718
+(5000ms) < 1B 73 01 03 0E 
+(5000ms) < 14 00 47 C1 80 91 7A 00 99 27 AA 27 BB 27 FC 01 
+(5000ms) < E0 58 F0 40 E2 32 F1 05 08 F0 90 C3 E0 5D FF 4F 
+(5000ms) < 09 94 F0 90 AA 01 38 C0 F0 90 AB 01 35 C0 80 91 
+(5000ms) < 77 00 88 23 71 F4 80 91 76 00 88 23 19 F0 E2 E3 
+(5000ms) < FE 2E 2E C0 9B D7 91 D7 04 C0 79 E1 F7 2E 28 C0 
+(5000ms) < DB D5 F8 2E 21 C0 F0 90 60 00 1E C0 F0 90 78 00 
+(5000ms) < 1B C0 62 E0 F6 2E 1C C0 51 E0 F5 2E 19 C0 48 E8 
+(4985ms) < F4 2E 16 C0 C0 91 76 00 CC 23 11 F0 FF 24 10 C0 
+(4985ms) < 8C 2F 7C D7 72 D7 32 E2 F3 2E 8B 30 48 F0 8F D7 
+(4985ms) < 88 23 31 F0 FC 2E 04 C0 8F EF F8 16 09 F4 4E C3 
+(4985ms) < 03 E0 10 E0 10 92 7A 00 F0 92 7B 00 4C C3 80 91 
+(4985ms) < 7A 00 99 27 AA 27 BB 27 B8 2F AA 27 99 27 88 27 
+(4985ms) < 20 91 7B 00 33 27 44 27 55 27 A9 01 33 27 22 27 
+(4985ms) < 82 2B 93 2B A4 2B B5 2B 20 91 7C 00 33 27 44 27 
+(4985ms) < 55 27 54 2F 43 2F 32 2F 22 27 82 2B 93 2B A4 2B 
+(4985ms) < B5 2B 20 91 7D 00 33 27 44 27 55 27 82 2B 93 2B 
+(4969ms) < A4 2B 00 53 
+Sequence number 115, message size 259, checksum 83
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.750
+(5000ms) > 1B 74 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 50 
+Sequence number 116, message size 4, checksum 80
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.750
+(5000ms) < 1B 74 01 03 0E 
+(5000ms) < 14 00 B5 2B 80 93 72 00 90 93 73 00 A0 93 74 00 
+(5000ms) < B0 93 75 00 BE C0 1B D6 97 98 80 E0 65 D6 8A E0 
+(5000ms) < 90 E0 1E D6 80 E0 2A D7 20 D7 80 93 77 00 86 31 
+(5000ms) < 10 F4 83 E0 05 C0 83 32 10 F4 85 E0 01 C0 87 E0 
+(5000ms) < 5D D7 80 91 77 00 89 30 10 F4 87 E0 57 D7 97 9A 
+(5000ms) < 8A E0 90 E0 05 D6 74 D5 C1 E0 C0 93 76 00 80 91 
+(5000ms) < 7B 00 99 27 FD D5 02 E0 10 E0 80 EC 80 93 7A 00 
+(5000ms) < CC 24 DD 24 80 91 7D 00 81 33 18 F0 80 E3 80 93 
+(4985ms) < 7D 00 80 91 7E 00 88 23 11 F4 C0 93 7E 00 80 91 
+(4985ms) < 7D 00 99 27 C8 16 D9 06 08 F0 4C C0 A8 95 C2 98 
+(4985ms) < 08 94 C1 1C D1 1C 80 91 7C 00 99 27 D9 D5 80 91 
+(4985ms) < 81 00 63 D5 80 91 7E 00 99 27 D2 D5 80 91 82 00 
+(4985ms) < 5C D5 80 91 7E 00 99 27 CB D5 C2 9A 80 91 83 00 
+(4985ms) < 54 D5 F8 2E 80 91 7E 00 99 27 C2 D5 80 91 84 00 
+(4985ms) < 4C D5 78 2E 80 91 7E 00 99 27 BA D5 90 91 80 00 
+(4985ms) < 93 30 39 F4 80 91 7F 00 F8 16 69 F4 10 92 7A 00 
+(4985ms) < 0A C0 00 0A 
+Sequence number 116, message size 259, checksum 10
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.781
+(5000ms) > 1B 75 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 51 
+Sequence number 117, message size 4, checksum 81
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.781
+(5000ms) < 1B 75 01 03 0E 
+(5000ms) < 14 00 80 91 7F 00 78 16 11 F4 10 92 7A 00 99 23 
+(5000ms) < 11 F4 90 93 7A 00 80 91 7A 00 88 23 31 F4 C2 98 
+(5000ms) < 80 91 7D 00 C8 2E DD 24 B2 CF F2 D4 84 E1 90 E0 
+(5000ms) < 97 D5 AD CF 80 91 7A 00 88 23 09 F4 84 C2 95 DE 
+(5000ms) < 82 C2 93 DE 26 C0 80 91 7C 00 17 D5 80 91 7D 00 
+(5000ms) < 14 D5 80 91 7E 00 11 D5 80 91 7F 00 0E D5 A8 95 
+(5000ms) < 80 91 7B 00 88 23 29 F4 80 91 7A 00 99 27 78 D5 
+(5000ms) < 0D C0 C6 E9 EC 2E 01 C0 EA 94 60 E0 70 E0 80 E0 
+(5000ms) < 90 EF 49 D5 80 FF 02 C0 EE 20 B1 F7 84 E1 90 E0 
+(4984ms) < 67 D5 02 E0 10 E0 10 92 7A 00 55 C2 66 24 88 24 
+(4984ms) < 99 24 54 01 B6 E9 EB 2E 80 91 7D 00 84 30 18 F4 
+(4984ms) < 84 E0 80 93 7D 00 80 91 7D 00 81 32 18 F0 80 E2 
+(4984ms) < 80 93 7D 00 80 91 72 00 90 91 73 00 A0 91 74 00 
+(4984ms) < B0 91 75 00 80 93 6E 00 90 93 6F 00 A0 93 70 00 
+(4984ms) < B0 93 71 00 80 91 7A 00 99 27 D8 2F CC 27 80 91 
+(4984ms) < 7B 00 99 27 C8 2B D9 2B 91 E0 C9 31 D9 07 20 F0 
+(4984ms) < 02 E0 00 82 
+Sequence number 117, message size 259, checksum 130
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.796
+(5000ms) > 1B 76 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 52 
+Sequence number 118, message size 4, checksum 82
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.796
+(5000ms) < 1B 76 01 03 0E 
+(5000ms) < 14 00 10 E0 80 EC 1D C2 A8 95 70 90 7C 00 FF 24 
+(5000ms) < 87 2D 99 27 80 95 90 95 9C 01 21 70 30 70 80 FF 
+(4985ms) < 94 C0 CC 24 DD 24 CC 16 DD 06 08 F0 3A C1 09 E7 
+(4985ms) < 10 E0 66 20 31 F0 C0 FE 04 C0 80 91 7E 00 88 60 
+(4985ms) < 02 C0 80 91 7E 00 99 D4 80 91 72 00 90 91 73 00 
+(4985ms) < D6 D4 F8 01 82 85 91 D4 90 91 81 00 F8 01 82 85 
+(4985ms) < 98 17 99 F0 80 90 72 00 90 90 73 00 A0 90 74 00 
+(4985ms) < B0 90 75 00 8F EF 9F EF A0 E0 B0 E0 88 22 99 22 
+(4985ms) < AA 22 BB 22 70 92 7C 00 03 C0 82 E0 80 93 7C 00 
+(4985ms) < A8 95 66 20 19 F4 82 E0 90 E0 E2 D4 80 91 7C 00 
+(4985ms) < 99 27 82 FF 19 C0 F6 E9 EF 2E 66 20 31 F0 C0 FE 
+(4969ms) < 04 C0 80 91 80 00 88 60 02 C0 80 91 80 00 5D D4 
+(4969ms) < C4 01 9D D4 80 E0 59 D4 EA 94 90 91 81 00 89 17 
+(4969ms) < B9 F4 EE 20 51 F7 14 C0 83 FF 0E C0 E6 E9 EE 2E 
+(4969ms) < 01 C0 EA 94 60 E0 70 E0 80 E0 90 EF 94 D4 80 FF 
+(4969ms) < 07 C0 EE 20 B1 F7 04 C0 80 91 7D 00 99 27 B0 D4 
+(4969ms) < 66 20 00 24 
+Sequence number 118, message size 259, checksum 36
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.828
+(5000ms) > 1B 77 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 53 
+Sequence number 119, message size 4, checksum 83
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.828
+(5000ms) < 1B 77 01 03 0E 
+(5000ms) < 14 00 11 F0 C0 FE 13 C0 80 91 72 00 90 91 73 00 
+(5000ms) < A0 91 74 00 B0 91 75 00 01 96 A1 1D B1 1D 80 93 
+(5000ms) < 72 00 90 93 73 00 A0 93 74 00 B0 93 75 00 EE 20 
+(4984ms) < 11 F4 70 E8 F7 2E 08 94 C1 1C D1 1C 0F 5F 1F 4F 
+(4984ms) < CC 16 DD 06 08 F4 75 CF AC C0 69 01 2C 17 3D 07 
+(4984ms) < 08 F0 53 C0 09 E7 10 E0 A8 95 66 20 31 F0 C0 FE 
+(4984ms) < 04 C0 80 91 7E 00 88 60 02 C0 80 91 7E 00 05 D4 
+(4984ms) < 80 91 72 00 90 91 73 00 42 D4 F8 01 82 85 FD D3 
+(4984ms) < 90 91 81 00 F8 01 82 85 98 17 89 F0 80 90 72 00 
+(4984ms) < 90 90 73 00 A0 90 74 00 B0 90 75 00 8F EF 9F EF 
+(4984ms) < A0 E0 B0 E0 88 22 99 22 AA 22 BB 22 06 C0 80 91 
+(4984ms) < 7C 00 8F 78 80 61 80 93 7C 00 66 20 11 F0 C0 FE 
+(4984ms) < 13 C0 80 91 72 00 90 91 73 00 A0 91 74 00 B0 91 
+(4969ms) < 75 00 01 96 A1 1D B1 1D 80 93 72 00 90 93 73 00 
+(4969ms) < A0 93 74 00 B0 93 75 00 08 94 C1 1C D1 1C 0F 5F 
+(4969ms) < 1F 4F CC 16 DD 06 08 F4 AF CF A8 95 80 91 7C 00 
+(4969ms) < 87 FF 00 6C 
+Sequence number 119, message size 259, checksum 108
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.859
+(5000ms) > 1B 78 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 5C 
+Sequence number 120, message size 4, checksum 92
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.859
+(5000ms) < 1B 78 01 03 0E 
+(5000ms) < 14 00 4F C0 80 91 7F 00 B8 D3 80 91 6E 00 90 91 
+(5000ms) < 6F 00 F5 D3 80 E0 B1 D3 66 20 19 F4 81 E0 90 E0 
+(5000ms) < 1F D4 66 E9 E6 2E 80 91 7C 00 85 FF 24 C0 81 14 
+(5000ms) < 91 04 A1 04 B1 04 F9 F0 D5 01 C4 01 81 70 90 70 
+(5000ms) < A0 70 B0 70 89 2B 21 F0 80 91 80 00 88 60 02 C0 
+(4984ms) < 80 91 80 00 92 D3 C4 01 D2 D3 80 E0 8E D3 EA 94 
+(4984ms) < 90 91 81 00 89 17 11 F4 EE 20 31 F7 EE 20 C9 F4 
+(4984ms) < 50 E8 F5 2E 16 C0 86 FF 10 C0 01 C0 EA 94 60 E0 
+(4984ms) < 70 E0 80 E0 90 EF C7 D3 80 FF 02 C0 EE 20 B1 F7 
+(4984ms) < EE 20 39 F4 41 E8 F4 2E 04 C0 80 91 7D 00 99 27 
+(4984ms) < DF D3 02 E0 10 E0 F0 92 7A 00 CD C0 66 24 80 91 
+(4984ms) < 7A 00 99 27 D8 2F CC 27 80 91 7B 00 99 27 C8 2B 
+(4984ms) < D9 2B F0 90 7C 00 91 E0 C9 31 D9 07 10 F0 C8 E1 
+(4984ms) < D1 E0 CC 24 DD 24 CC 16 DD 06 A0 F5 0B E7 10 E0 
+(4984ms) < A8 95 66 20 29 F0 C0 FE 03 C0 8F 2D 88 60 01 C0 
+(4969ms) < 8F 2D 43 D3 80 91 72 00 90 91 73 00 80 D3 80 E0 
+(4969ms) < 3C D3 00 F8 
+Sequence number 120, message size 259, checksum 248
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.890
+(5000ms) > 1B 79 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 5D 
+Sequence number 121, message size 4, checksum 93
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.890
+(5000ms) < 1B 79 01 03 0E 
+(5000ms) < 14 00 D8 01 8C 93 66 20 11 F0 C0 FE 13 C0 80 91 
+(5000ms) < 72 00 90 91 73 00 A0 91 74 00 B0 91 75 00 01 96 
+(5000ms) < A1 1D B1 1D 80 93 72 00 90 93 73 00 A0 93 74 00 
+(5000ms) < B0 93 75 00 08 94 C1 1C D1 1C 0F 5F 1F 4F CC 16 
+(5000ms) < DD 06 70 F2 8E 01 0D 5F 1F 4F 10 92 7A 00 C7 58 
+(5000ms) < DF 4F 1A 82 78 C0 80 91 7A 00 0F D3 80 91 7B 00 
+(5000ms) < 0C D3 80 91 7C 00 09 D3 80 91 7D 00 06 D3 03 E0 
+(4984ms) < 10 E0 10 92 7A 00 10 92 7B 00 65 C0 0B E7 10 E0 
+(4984ms) < C0 E0 D0 E0 23 E0 E2 2E F8 01 81 91 8F 01 F5 D2 
+(4984ms) < F8 2E 80 91 7A 00 99 27 21 96 8C 17 9D 07 11 F4 
+(4984ms) < F0 92 7B 00 85 E0 90 E0 5B D3 EA 94 E7 FE EC CF 
+(4984ms) < 04 E0 10 E0 10 92 7A 00 10 92 7C 00 44 C0 F0 90 
+(4984ms) < 7B 00 70 90 7C 00 EE 24 CE 2D 80 91 7A 00 E8 16 
+(4984ms) < 00 F5 85 E0 90 E0 44 D3 C7 15 80 F0 EF 14 70 F4 
+(4984ms) < 0E 2D 11 27 07 58 1F 4F EC 2F FF 27 E7 58 FF 4F 
+(4984ms) < 84 81 C3 D2 F8 01 82 83 E3 94 06 C0 EC 2F FF 27 
+(4968ms) < E7 58 00 BC 
+Sequence number 121, message size 259, checksum 188
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.921
+(5000ms) > 1B 7A 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 5E 
+Sequence number 122, message size 4, checksum 94
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.921
+(5000ms) < 1B 7A 01 03 0E 
+(5000ms) < 14 00 FF 4F 84 81 B9 D2 CF 5F 80 91 7A 00 C8 17 
+(5000ms) < 00 F3 EF 14 40 F4 EE 2D FF 27 E5 58 FF 4F 11 92 
+(5000ms) < E3 94 EF 14 E0 F3 EE 2D FF 27 8F 01 0D 5F 1F 4F 
+(5000ms) < 10 92 7A 00 E7 58 FF 4F 12 82 05 C0 02 E0 10 E0 
+(5000ms) < 89 EC 80 93 7A 00 B8 01 85 2D D0 DB EF E0 CD B7 
+(5000ms) < DE B7 C6 C4 EF 92 FF 92 0F 93 1F 93 CF 93 11 E0 
+(5000ms) < F1 2E C2 E0 EC 2E 1F EF 81 11 FE 2C 81 E0 D8 D1 
+(5000ms) < C8 2F 8D 30 D1 F1 8A 30 C1 F1 0C 2F 00 53 0A 30 
+(4985ms) < 38 F0 8C 2F 81 54 86 30 18 F0 80 52 86 30 20 F5 
+(4985ms) < 1F 3F 09 F4 10 E0 8C 2F 94 D1 0A 30 28 F4 12 95 
+(4985ms) < 10 7F 1C 0F 10 53 17 C0 8C 2F 81 54 21 2F 33 27 
+(4985ms) < 86 30 48 F4 B4 E0 22 0F 33 1F BA 95 E1 F7 1C 2F 
+(4985ms) < 12 0F 17 53 08 C0 A4 E0 22 0F 33 1F AA 95 E1 F7 
+(4985ms) < 1C 2F 12 0F 17 55 EA 94 81 E0 A2 D1 C8 2F 8D 30 
+(4985ms) < 21 F0 8A 30 11 F0 EE 20 41 F6 CD 30 11 F0 CA 30 
+(4985ms) < 09 F4 FA 94 FF 20 19 F0 81 E0 92 D1 FA CF 81 2F 
+(4985ms) < 99 27 00 D2 
+Sequence number 122, message size 259, checksum 210
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.953
+(5000ms) > 1B 7B 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 5F 
+Sequence number 123, message size 4, checksum 95
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.953
+(5000ms) < 1B 7B 01 03 0E 
+(5000ms) < 14 00 CF 91 1F 91 0F 91 FF 90 EF 90 08 95 8B E1 
+(5000ms) < 58 D1 85 E4 56 D1 08 95 0F 93 1F 93 CF 93 C8 2F 
+(5000ms) < 84 EA 90 E0 60 D1 83 EB 90 E0 5D D1 80 EC 90 E0 
+(5000ms) < 5A D1 89 ED 90 E0 57 D1 80 91 AA 01 40 E1 50 E0 
+(5000ms) < 69 E7 70 E0 99 27 EA D3 89 E7 90 E0 3E D1 89 EF 
+(5000ms) < 90 E0 49 D1 8C 2F 7E DF 8F 3F 11 F0 80 93 AA 01 
+(5000ms) < D6 DF 8D EF 90 E0 3F D1 80 91 AB 01 40 E1 50 E0 
+(5000ms) < 69 E7 70 E0 99 27 D2 D3 89 E7 90 E0 26 D1 8D E1 
+(5000ms) < 91 E0 31 D1 8C 2F 66 DF 8F 3F 11 F0 80 93 AB 01 
+(4984ms) < BE DF 81 E2 91 E0 27 D1 83 D3 4A E0 50 E0 69 E7 
+(4984ms) < 70 E0 99 27 BB D3 89 E7 90 E0 0F D1 86 E5 91 E0 
+(4984ms) < 1A D1 8C 2F 4F DF 08 2F 8F 3F 31 F0 81 E0 74 D3 
+(4984ms) < 00 23 11 F4 80 2F 70 D3 A2 DF 03 E0 10 E0 68 D3 
+(4984ms) < D8 01 08 2E 39 D4 A1 E0 B0 E0 80 91 AB 01 08 2E 
+(4984ms) < 33 D4 A2 E0 B0 E0 80 91 AA 01 08 2E 2D D4 A0 E0 
+(4984ms) < B0 E0 84 E1 08 2E 28 D4 8A E5 91 E0 F4 D0 80 91 
+(4984ms) < AA 01 00 8B 
+Sequence number 123, message size 259, checksum 139
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:30.968
+(5000ms) > 1B 7C 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 58 
+Sequence number 124, message size 4, checksum 88
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:30.984
+(5000ms) < 1B 7C 01 03 0E 
+(5000ms) < 14 00 40 E1 50 E0 69 E7 70 E0 99 27 87 D3 89 E7 
+(5000ms) < 90 E0 DB D0 8E E2 D5 D0 80 91 AB 01 80 31 10 F4 
+(5000ms) < 80 E3 CF D0 80 91 AB 01 40 E1 50 E0 69 E7 70 E0 
+(5000ms) < 99 27 74 D3 89 E7 90 E0 C8 D0 87 E7 91 E0 D3 D0 
+(5000ms) < 80 E8 91 E0 D0 D0 CF 91 1F 91 0F 91 08 95 CF E5 
+(5000ms) < D4 E0 DE BF CD BF DD 24 BD 2C CD 2C C0 E0 D0 E0 
+(5000ms) < 7E 01 84 E6 90 E0 FC D1 52 D3 83 E0 47 D3 9F D0 
+(5000ms) < 09 D2 BA 9A C2 9A 8F 9A 97 98 78 94 84 E0 80 93 
+(5000ms) < AB 01 82 E0 80 93 AA 01 A0 E0 B0 E0 D5 D3 80 2D 
+(5000ms) < 84 31 89 F4 A1 E0 B0 E0 CF D3 80 2D 80 93 AB 01 
+(4984ms) < A2 E0 B0 E0 C9 D3 80 2D 80 93 AA 01 A3 E0 B0 E0 
+(4984ms) < C3 D3 80 2D F9 D2 81 E0 B3 D0 04 C0 80 E0 B0 D0 
+(4984ms) < 11 23 21 F5 8B 31 19 F4 11 E0 08 2F F7 CF 8D 30 
+(4984ms) < 19 F0 8A 30 09 F0 65 C0 21 96 BB 20 39 F4 8A 30 
+(4984ms) < 29 F4 9D E0 D9 16 11 F4 31 E0 B3 2E D8 2E BB 20 
+(4984ms) < 29 F0 C4 30 D1 05 F9 F6 81 E0 04 C0 C2 30 D1 05 
+(4984ms) < D1 F6 00 C3 
+Sequence number 124, message size 259, checksum 195
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.000
+(5000ms) > 1B 7D 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 59 
+Sequence number 125, message size 4, checksum 89
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.000
+(5000ms) < 1B 7D 01 03 0E 
+(5000ms) < 14 00 8B 2D 09 DF C0 E0 D0 E0 D5 CF 11 30 21 F4 
+(5000ms) < C8 2E 08 27 12 E0 D2 CF 12 30 31 F4 08 27 99 27 
+(4985ms) < F8 2E EE 24 13 E0 CA CF 13 30 31 F4 08 27 99 27 
+(4985ms) < E8 2A F9 2A 14 E0 C2 CF 14 30 41 F4 08 27 8E 30 
+(4985ms) < 09 F0 B9 CF 15 E0 C0 E0 D0 E0 B8 CF 15 30 A1 F4 
+(4985ms) < CE 15 DF 05 34 F5 91 E0 C8 31 D9 07 14 F5 08 27 
+(4985ms) < FE 01 E7 58 FF 4F 80 83 21 96 A8 95 CE 15 DF 05 
+(4985ms) < 09 F0 A4 CF 16 E0 A2 CF 16 30 99 F4 80 17 39 F4 
+(4985ms) < 1E 14 1F 04 24 F4 A8 95 8C 2D 7B DA 0A C0 80 EB 
+(4985ms) < 80 93 79 00 81 EC 80 93 7A 00 62 E0 70 E0 8C 2D 
+(4985ms) < 25 DA EE 24 FF 24 DD 24 CD 2C E7 01 84 CF 10 BC 
+(4985ms) < 87 E0 90 E0 89 B9 88 E1 8A B9 86 E8 80 BD 6E D1 
+(4969ms) < 08 95 5D 9B FE CF 8C B9 08 95 CF 93 DF 93 EC 01 
+(4969ms) < 88 81 88 23 29 F0 89 91 F4 DF 88 81 88 23 D9 F7 
+(4969ms) < DF 91 CF 91 08 95 CF 93 DF 93 EC 01 FC 01 21 96 
+(4969ms) < 84 91 88 23 31 F0 E5 DF FE 01 21 96 84 91 88 23 
+(4969ms) < D1 F7 00 32 
+Sequence number 125, message size 259, checksum 50
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.031
+(5000ms) > 1B 7E 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 5A 
+Sequence number 126, message size 4, checksum 90
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.031
+(5000ms) < 1B 7E 01 03 0E 
+(5000ms) < 14 00 DF 91 CF 91 08 95 CF 93 C8 2F 5F 99 04 C0 
+(5000ms) < C1 11 42 D1 5F 9B FC CF 8C B1 99 27 CF 91 08 95 
+(5000ms) < 0F 93 1F 93 CF 93 08 2F C0 E0 1C 2F 5F 99 31 C0 
+(5000ms) < 01 11 32 D1 6C D1 00 97 39 F4 C0 E0 1C 2F 90 93 
+(4984ms) < A1 01 80 93 A0 01 23 C0 CC 23 F9 F4 C6 E9 80 E0 
+(4984ms) < 15 D2 90 93 A1 01 80 93 A0 01 07 D2 90 93 A1 01 
+(4984ms) < 80 93 A0 01 0A 97 1C F4 81 E0 3E D1 0E C0 4F D1 
+(4984ms) < 02 97 59 F0 11 23 41 F4 12 E3 19 D2 88 23 11 F0 
+(4984ms) < 82 E0 01 C0 83 E0 30 D1 11 50 45 D1 C1 50 5F 9B 
+(4984ms) < CF CF 8C B1 99 27 CF 91 1F 91 0F 91 08 95 5F 9B 
+(4984ms) < 03 C0 8C B1 5F 99 FD CF 08 95 10 92 A2 01 83 30 
+(4984ms) < 48 F0 81 E0 80 93 A2 01 8C E0 80 93 6A 00 8C E0 
+(4984ms) < 90 E0 08 95 82 30 48 F0 70 98 69 9A 68 9A 82 E0 
+(4969ms) < 80 93 6A 00 82 E0 90 E0 08 95 81 30 41 F4 70 98 
+(4969ms) < 69 9A 68 98 80 93 6A 00 81 E0 90 E0 08 95 88 23 
+(4969ms) < 41 F4 70 98 69 98 68 9A 80 93 6A 00 80 E0 90 E0 
+(4969ms) < 08 95 00 79 
+Sequence number 126, message size 259, checksum 121
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.062
+(5000ms) > 1B 7F 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > 5B 
+Sequence number 127, message size 4, checksum 91
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.062
+(5000ms) < 1B 7F 01 03 0E 
+(5000ms) < 14 00 81 E0 90 E0 08 95 80 91 6A 00 99 27 08 95 
+(5000ms) < 2D B1 1D B8 C5 98 80 E7 91 E0 FC 01 31 97 F1 F7 
+(5000ms) < C5 9A 01 97 F1 F7 C5 98 2D B9 08 95 C0 9A 80 E7 
+(5000ms) < 91 E0 01 97 F1 F7 C0 98 84 E1 90 E0 91 D0 08 95 
+(5000ms) < B8 9A C0 9A BB 9A C3 98 BD 9A C5 98 89 E1 90 E0 
+(5000ms) < 87 D0 B8 9A C0 9A 89 E1 90 E0 82 D0 80 91 A2 01 
+(4984ms) < 88 23 29 F4 83 E5 8D B9 80 91 6A 00 9E DF C0 98 
+(4984ms) < 84 E1 90 E0 75 D0 DA DF 08 95 CF 93 DF 93 98 2F 
+(4984ms) < 70 E0 80 91 A2 01 88 23 31 F4 9F B9 77 9B FE CF 
+(4984ms) < 8F B1 99 27 31 C0 C5 98 67 E0 49 2F 55 27 A0 E7 
+(4984ms) < B1 E0 C0 E0 D0 E0 E1 E0 F0 E0 27 E0 30 E0 CA 01 
+(4984ms) < 02 2E 02 C0 95 95 87 95 0A 94 E2 F7 80 FF 02 C0 
+(4984ms) < C3 9A 01 C0 C3 98 CD 01 01 97 F1 F7 C5 9A CD 01 
+(4984ms) < 01 97 F1 F7 C5 98 B4 9B 08 C0 CF 01 02 2E 02 C0 
+(4984ms) < 88 0F 99 1F 0A 94 E2 F7 78 2B 61 50 21 50 30 40 
+(4968ms) < 67 FF DD CF 87 2F 99 27 DF 91 CF 91 08 95 0F 93 
+(4968ms) < 1F 93 00 C8 
+Sequence number 127, message size 259, checksum 200
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.093
+(5000ms) > 1B 80 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > A4 
+Sequence number 128, message size 4, checksum 164
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.093
+(5000ms) < 1B 80 01 03 0E 
+(5000ms) < 14 00 8C 01 81 2F 99 27 B8 DF 80 2F B6 DF 99 27 
+(5000ms) < 1F 91 0F 91 08 95 EF 92 FF 92 0F 93 1F 93 7B 01 
+(5000ms) < 8C 01 89 2F 99 27 AA 27 BB 27 A7 DF C8 01 AA 27 
+(5000ms) < BB 27 A3 DF BB 27 A1 2F 90 2F 8F 2D 9E DF 8E 2D 
+(5000ms) < 9C DF 99 27 1F 91 0F 91 FF 90 EF 90 08 95 1D B8 
+(5000ms) < C0 9A BB 98 C3 98 BD 98 C5 98 B8 98 C0 98 08 95 
+(5000ms) < CF 93 DF 93 9C 01 89 2B 51 F0 A2 ED BD E0 C0 E0 
+(4985ms) < D0 E0 CD 01 01 97 F1 F7 21 50 30 40 D1 F7 DF 91 
+(4985ms) < CF 91 08 95 88 E1 90 E0 2F E0 0F B6 F8 94 A8 95 
+(4985ms) < 81 BD 0F BE 21 BD 08 95 A8 95 08 95 B9 9A 81 E0 
+(4985ms) < 80 93 6C 00 1D BC 1C BC 83 EC 8F BD 8C E0 8E BD 
+(4985ms) < 80 91 A3 01 90 91 A4 01 89 2F 99 27 8B BD 80 91 
+(4985ms) < A3 01 8A BD 08 95 80 91 A5 01 90 91 A6 01 00 97 
+(4985ms) < 51 F0 00 00 00 00 00 00 01 97 90 93 A6 01 80 93 
+(4985ms) < A5 01 81 E0 90 E0 08 95 98 2F 80 91 6C 00 98 17 
+(4985ms) < 69 F0 90 93 6C 00 99 23 49 F4 10 92 A4 01 10 92 
+(4985ms) < A3 01 00 D0 
+Sequence number 128, message size 259, checksum 208
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.125
+(5000ms) > 1B 81 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > A5 
+Sequence number 129, message size 4, checksum 165
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.125
+(5000ms) < 1B 81 01 03 0E 
+(5000ms) < 14 00 81 E0 80 93 6B 00 9B BD 9A BD 08 95 80 91 
+(5000ms) < 6C 00 99 27 08 95 D7 DF 28 2F 88 23 09 F0 84 C0 
+(5000ms) < 80 E9 91 E0 90 93 A6 01 80 93 A5 01 80 91 6C 00 
+(5000ms) < 81 30 09 F0 4C C0 80 91 6B 00 20 91 A3 01 30 91 
+(5000ms) < A4 01 81 30 19 F4 2F 5F 3F 4F 26 C0 20 39 31 05 
+(5000ms) < 30 F4 88 E5 92 E0 90 93 A6 01 80 93 A5 01 20 34 
+(5000ms) < 31 05 30 F4 80 E2 93 E0 90 93 A6 01 80 93 A5 01 
+(5000ms) < 20 32 31 05 30 F4 80 ED 97 E0 90 93 A6 01 80 93 
+(4985ms) < A5 01 20 31 31 05 30 F4 88 E8 93 E1 90 93 A6 01 
+(4985ms) < 80 93 A5 01 21 50 30 40 30 93 A4 01 20 93 A3 01 
+(4985ms) < 80 91 A3 01 90 91 A4 01 8F 3F 91 05 49 F0 40 F0 
+(4985ms) < 8F EF 90 E0 90 93 A4 01 80 93 A3 01 10 92 6B 00 
+(4985ms) < 80 91 A3 01 90 91 A4 01 02 97 20 F5 15 C0 83 30 
+(4985ms) < 69 F4 80 E4 9F E1 90 93 A6 01 80 93 A5 01 80 91 
+(4985ms) < A3 01 90 91 A4 01 89 2B 69 F0 02 C0 88 23 41 F4 
+(4985ms) < 10 92 A4 01 10 92 A3 01 81 E0 80 93 6B 00 0A C0 
+(4985ms) < 82 30 00 DC 
+Sequence number 129, message size 259, checksum 220
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.140
+(5000ms) > 1B 82 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > A6 
+Sequence number 130, message size 4, checksum 166
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.156
+(5000ms) < 1B 82 01 03 0E 
+(5000ms) < 14 00 41 F4 8F EF 93 E0 90 93 A4 01 80 93 A3 01 
+(5000ms) < 20 93 6B 00 80 91 A3 01 90 91 A4 01 89 2F 99 27 
+(5000ms) < 8B BD 80 91 A3 01 8A BD 08 95 1F 92 0F 92 0F B6 
+(5000ms) < 0F 92 11 24 2F 93 3F 93 8F 93 9F 93 24 B1 85 B1 
+(5000ms) < 99 27 98 2F 88 27 33 27 82 2B 93 2B 90 93 A9 01 
+(5000ms) < 80 93 A8 01 10 92 A7 01 9F 91 8F 91 3F 91 2F 91 
+(5000ms) < 0F 90 0F BE 0F 90 1F 90 18 95 88 0F 99 1F 88 0F 
+(5000ms) < 99 1F 62 E3 70 E0 82 D0 CB 01 08 95 91 E0 90 93 
+(5000ms) < A7 01 87 70 80 6C 87 B9 8F E9 86 B9 36 9A 80 91 
+(5000ms) < A7 01 88 23 E1 F7 80 91 A8 01 90 91 A9 01 08 95 
+(4984ms) < 80 91 6D 00 99 27 08 95 80 93 6D 00 08 95 0F 93 
+(4984ms) < 1F 93 80 91 6D 00 88 23 C9 F0 97 98 B8 98 C0 98 
+(4984ms) < 80 E0 DC DF D2 DF 8C 01 B8 9A 97 9A C0 98 85 E0 
+(4984ms) < 90 E0 C6 DE 80 E0 D2 DF C8 DF 9C 01 97 98 B8 98 
+(4984ms) < C0 98 80 2F 62 2F 3E D0 84 30 18 F0 81 E0 90 E0 
+(4984ms) < 02 C0 80 E0 90 E0 1F 91 0F 91 08 95 98 2F 97 70 
+(4984ms) < 99 0F 00 3F 
+Sequence number 130, message size 259, checksum 63
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.171
+(5000ms) > 1B 83 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > A7 
+Sequence number 131, message size 4, checksum 167
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.171
+(5000ms) < 1B 83 01 03 0E 
+(5000ms) < 14 00 99 0F 82 B3 83 7E 89 2B 82 BB 08 95 81 B3 
+(4985ms) < 8C 61 81 BB 92 98 93 98 94 98 08 95 FB 01 9F 01 
+(4985ms) < 42 30 6C F0 45 32 5C F4 64 2F 77 27 71 D0 80 5D 
+(4985ms) < 8A 33 0C F0 89 5D 81 93 CB 01 00 97 A9 F7 10 82 
+(4985ms) < C9 01 00 C0 DC 01 FC 01 01 90 00 20 E9 F7 32 97 
+(4985ms) < AE 17 BF 07 30 F4 7C 91 60 81 70 83 31 97 6D 93 
+(4985ms) < F7 CF 08 95 99 1B 79 E0 04 C0 99 1F 96 17 08 F0 
+(4985ms) < 96 1B 88 1F 7A 95 C9 F7 80 95 08 95 97 FB 09 2E 
+(4985ms) < 07 26 0A D0 77 FD 04 D0 43 D0 06 D0 00 20 1A F4 
+(4985ms) < 70 95 61 95 7F 4F 08 95 F6 F7 90 95 81 95 9F 4F 
+(4985ms) < 08 95 2F 92 3F 92 4F 92 5F 92 6F 92 7F 92 8F 92 
+(4969ms) < 9F 92 AF 92 BF 92 CF 92 DF 92 EF 92 FF 92 0F 93 
+(4969ms) < 1F 93 CF 93 DF 93 CD B7 DE B7 CA 1B DB 0B 0F B6 
+(4969ms) < F8 94 DE BF 0F BE CD BF 09 94 2A 88 39 88 48 88 
+(4969ms) < 5F 84 6E 84 7D 84 8C 84 9B 84 AA 84 B9 84 C8 84 
+(4969ms) < DF 80 EE 80 FD 80 0C 81 1B 81 AA 81 B9 81 CE 0F 
+(4969ms) < D1 1D 00 75 
+Sequence number 131, message size 259, checksum 117
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.203
+(5000ms) > 1B 84 00 04 0E 
+(5000ms) > 14 01 00 20 
+(5000ms) > A0 
+Sequence number 132, message size 4, checksum 160
+CMD_READ_FLASH_ISP
+
+Receiving packet 11/28/2006 21:26:31.203
+(5000ms) < 1B 84 01 03 0E 
+(5000ms) < 14 00 0F B6 F8 94 DE BF 0F BE CD BF ED 01 08 95 
+(5000ms) < AA 1B BB 1B 51 E1 07 C0 AA 1F BB 1F A6 17 B7 07 
+(5000ms) < 10 F0 A6 1B B7 0B 88 1F 99 1F 5A 95 A9 F7 80 95 
+(5000ms) < 90 95 BC 01 CD 01 08 95 E1 99 FE CF BF BB AE BB 
+(4984ms) < E0 9A 11 96 0D B2 08 95 E1 99 FE CF BF BB AE BB 
+(4984ms) < 0D BA 11 96 0F B6 F8 94 E2 9A E1 9A 0F BE 08 95 
+(4984ms) < 01 41 56 52 49 53 50 5F 32 00 01 01 01 01 FF FF 
+(4984ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4984ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4984ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4984ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4984ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4984ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4969ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4969ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4969ms) < FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+(4969ms) < FF FF 00 1C 
+Sequence number 132, message size 259, checksum 28
+CMD_READ_FLASH_ISP
+Returned status: Command succeeded
+
+Sending packet 11/28/2006 21:26:31.234
+(1000ms) > 1B 85 00 03 0E 
+(1000ms) > 11 01 01 
+(1000ms) > 82 
+Sequence number 133, message size 3, checksum 130
+CMD_LEAVE_PROGMODE_ISP
+
+Receiving packet 11/28/2006 21:26:31.234
+(1000ms) < 1B 85 00 02 0E 
+(1000ms) < 11 00 83 
+Sequence number 133, message size 2, checksum 131
+CMD_LEAVE_PROGMODE_ISP
+Returned status: Command succeeded
+Port closed
+Returned status: Command succeeded

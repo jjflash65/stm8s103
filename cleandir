@@ -1,0 +1,11 @@
+find -name $"rsc.*" -exec rm {} \;
+find -name $"cide.*" -exec rm {} \;
+find -name $"*.rst" -exec rm {} \;
+find -name $"*.rel" -exec rm {} \;
+find -name $"*.sym" -exec rm {} \;
+find -name $"*.lst" -exec rm {} \;
+find -name $"*.map" -exec rm {} \;
+find -name $"*.cdb" -exec rm {} \;
+find -name $"*.lk" -exec rm {} \;
+find -name $"*.mem" -exec rm {} \;
+find -name $"*.bak" -exec rm {} \;

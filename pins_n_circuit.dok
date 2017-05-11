@@ -1,0 +1,207 @@
+##################################################################
+                      STM8S103F3P6 Pinout
+##################################################################
+
+
+                            ------------
+UART1_CK / TIM2_CH1 / PD4  |  1     20  |  PD3 / AIN4 / TIM2_CH2 / ADC_ETR
+    UART1_TX / AIN5 / PD5  |  2     19  |  PD2 / AIN3
+    UART1_RX / AIN6 / PD6  |  3     18  |  PD1 / SWIM
+                     NRST  |  4     17  |  PC7 / SPI_MISO
+              OSCIN / PA1  |  5     16  |  PC6 / SPI_MOSI
+             OSCOUT / PA2  |  6     15  |  PC5 / SPI_CLK
+                Vss (GND)  |  7     14  |  PC4 / TIM1_CH4 / CLK_CCO / AIN2
+                VCAP (*1)  |  8     13  |  PC3 / TIM1_CH3 /
+                Vdd (+Ub)  |  9     12  |  PB4 / I2C_SCL
+           TIM2_CH3 / PA3  | 10     11  |  PB5 / I2C_SDA
+                            -----------
+
+*1 :  Ist mit min. 1uF gegen GND zu verschalten
+
+##################################################################
+   STM8S103F3P6 Minimal-Board (China)  alternative Pinfunktionen
+##################################################################
+
+Hinweis: VCAP ist NICHT auf dem Board aufgelegt !!!
+
+
+Minimum-Board       =====    Funktion
+
+d4                  -----    PD4 / UART1_CK / TIM2_CH1 / BEEP(HS)
+d5                  -----    PD5 / UART1_TX / AIN5 / HS
+d6                  -----    PD6 / UART1_RX / AIN6 / HS
+rst                 -----    NRST ( auch fuer ST-Link)
+a1                  -----    PA1 / OSCIN (Quarz)
+a2                  -----    PA2 / OSCOUT (Ouarz)
+gnd                 -----    Vss
+5V                  -----    Betriebsspannung
+3V3                 -----    3,3V Ausgangsspannung AMS1117 3.3
+a3                  -----    PA3 / SPI_NSS / TIM2_CH3(HS)
+
+b5                  -----    PB5 / T / I2C_SDA / TIM1_BKIN
+b4                  -----    PB4 / T / I2C_SCL / ADC_ETR
+c3                  -----    PC3 / HS / TIM1_CH3 / TLI / TIM1_CH1N
+c4                  -----    PC4 / HS / TIM1_CH4 / CLK_CC0 / AIN2 / TIM1_CH2N
+c5                  -----    PC5 / HS / SPI_SCK
+c6                  -----    PC6 / HS / SPI_MOSI / TIM1_CH1
+c7                  -----    PC7 / HS / SPI_MISO / TIM1_CH2
+d1                  -----    PD1 / HS / SWIM ( ST-Link )
+d2                  -----    PD2 / HS / AIN3 / TIM2_CH3
+d3                  -----    PD3 / HS / AIN4 / TIM2_CH2 / ADC_ETR
+
+##################################################################
+   STM8S103F3P6     Arduino R3 style Board
+##################################################################
+
+
+
+    R3-Board              GPIO-Pins
+  ---------------------------------
+
+  "digital" Pins
+
+    (rx) 0           ----   PD6 (rx)
+    (tx) 1           ----   PD5 (tx)
+         2           ----   PC4
+         3           ----   PC3
+         4           ----   PD1
+         5           ----   PD2
+         6           ----   PD3
+         7           ----   PD4
+
+         8           ----   (I2C.sda 5V) wenn Jumper gesteckt
+         9           ----   (I2C.scl 5V) wenn Jumper gesteckt
+        10           ----   PA3 (SPI.SS)
+        11           ----   PC6 (SPI.MOSI)
+        12           ----   PC7 (SPI.MISO)
+        13           ----   PC5 (SPI.CLK)
+
+   "analoge Pins"
+
+         4           ----   PB5 (I2C.sda)
+         5           ----   PB4 (I2C.scl)
+
+
+##################################################################
+                      I2C Levelshifter:
+##################################################################
+
+
+ ermoeglicht das Anbinden von 5V I2C Einheiten an einen 3,3V Bus
+ oder eine 3,3V Einheit an einen 5V Bus. Im Falle des STM8S103F3
+ betraegt die Busspannung 3,3V, das heisst: die 3,3V Anschluesse
+ sind am Mikrocontroller anzubringen. 3,3V Einheiten sind direkt
+ am Controller anzuschliessen, 5V Einheiten an den 5V Anschluss
+ des Levelshifters
+
+ - konvertiert bidirektional 3,3V zu 5V Pegel des I2C Busses
+ - Schaltung wird 2 mal benoetigt, je einen fuer SDA und SCL
+
+
+                 +5V                  +3,3V   +3,3V
+                 ^                     ^       ^
+                 |                     |       |
+                +-+                   +-+      |
+                | |   2,2k            | |      |
+                | |                   | |      |
+                +-+                   +-+      |
+                 |       BS170         |       |
+I2C  (5V)   o----o---------    --------o-------------o  I2C - Signal (3,3V)
+                        D |   v  S             |
+                          - - -                |
+                           ---                 |
+                              | G              |
+                              |                |
+                              -----------------
+
+
+##################################################################
+             4 Digit 7 Segmentanzeige (China "Tube Module")
+                         mit 2 Stck. 74HC595
+##################################################################
+
+   Pinbelegung:
+
+   4 Bit LED Digital Tube Module                 STM8S103F
+   -------------------------------------------------------
+
+       (shift-clock)   Sclk   -------------------- PD1
+       (strobe-clock)  Rclk   -------------------- PD2
+       (ser. data in)  Dio    -------------------- PA3
+       (+Ub)           Vcc
+                       Gnd
+
+
+   Anzeigenposition 0 ist das rechte Segment des Moduls
+
+            +-----------------------------+
+            |  POS3   POS2   POS1   POS0  |
+    Vcc  o--|   --     --     --     --   |
+    Sclk o--|  |  |   |  |   |  |   |  |  |
+    Rclk o--|  |  |   |  |   |  |   |  |  |
+    Dio  o--|   -- o   -- o   -- o   -- o |
+    GND  o--|                             |
+            |   4-Bit LED Digital Tube    |
+            +-----------------------------+
+
+   Segmentbelegung der Anzeige:
+
+       a
+      ---
+   f | g | b            Segment | dp |  g  |  f  |  e  |  d  |  c  |  b  |  a  |
+      ---               --------------------------------------------------------
+   e |   | c            Bit-Nr. |  7 |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
+      ---
+       d
+
+   Segmente leuchten bei einer logischen 0 (gemeinsame Kathode) !!!
+
+
+##################################################################
+             4 Digit 7 Segmentanzeige "Clock Module"
+                         mit TM1637
+##################################################################
+
+
+   TM1637 Modul       STM8S103F
+       SCL   ---------- PC6
+       SDA   ---------- PC5
+
+   Anzeigenposition 0 ist das linke Segment des Moduls
+
+        +---------------------------+
+        |  POS0  POS1   POS2  POS3  |
+        |  +--+  +--+   +--+  +--+  | --o  GND
+        |  |  |  |  | o |  |  |  |  | --o  +5V
+        |  |  |  |  | o |  |  |  |  | --o  DIO
+        |  +--+  +--+   +--+  +--+  | --o  CLK
+        |      4-Digit Display      |
+        +---------------------------+
+
+   Segmentbelegung der Anzeige:
+
+       a
+      ---
+   f | g | b            Segment |  a  |  b  |  c  |  d  |  e  |  f  |  g  | Doppelpunkt (nur fuer POS1) |
+      ---               ---------------------------------------------------------------------------------
+   e |   | c            Bit-Nr. |  0  |  1  |  2  |  3  |  4  |  5  |  6  |              7              |
+      ---
+       d
+
+
+   Bit 7 der 7-Segmentanzeige POS1 ist der Doppelpunkt
+
+
+##################################################################
+                EEPROM 8-pol. 24C16 - 24C64 / 24LC1025
+##################################################################
+
+                         +--------+
+                     A0  | 1    8 |  Vcc
+                     A1  | 2    7 |  n.c. oder WP *
+                     A2  | 3    6 |  SCL
+                    GND  | 4    5 |  SDA
+                         +--------+
+
+* manche I2C EEPROMs besitzen keinen Write-Protection Anschluss
+WP= 0 : Schreiboperationen verfuegbar

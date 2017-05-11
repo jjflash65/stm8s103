@@ -1,0 +1,1 @@
+./stm8flash -c stlinkv2 -p stm8s103f3 -s opt -w stm8unlock.bin

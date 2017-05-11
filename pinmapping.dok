@@ -1,0 +1,594 @@
+###########################################################################################################################
+                                          AVR - 28 POL. ATMEGA CONTROLLER
+
+
+                                         Pinmapping Arduino - ATmega168/328
+
+
+Arduino Uno         =====    ATmega168/328          Chip pinnumber
+------------------------------------------------------------------
+
+reset               -----    PC6  /reset - PCINT14           1
+digital 0 (RX)      -----    PD0  PCINT16 - RxD              2
+digital 1 (TX)      -----    PD1  PCINT17 - TxD              3
+digital 2           -----    PD2  PCINT18 - INT0             4
+digital 3 (PWM)     -----    PD3  PCINT19 - OC2B - INT1      5
+digital 4           -----    PD4  PCINT20 - XCK - T0         6
+Vcc                 -----    Vcc                             7
+Gnd                 -----    Gnd                             8
+                    -----    PB6  PCINT6 - XTAL1 - TOSC1     9
+                    -----    PB7  PCINT7 - XTAL2 - TOSC2    10
+digital 5 (PWM)     -----    PD5  PCINT21 - OC0B - T1       11
+digital 6 (PWM)     -----    PD6  PCINT22 - OC0A - AIN0     12
+digital 7           -----    PD7  PCINT23 - AIN1            13
+digital 8           -----    PB0  PCINT0 - CLKO - ICP1      14
+
+
+digital 9 (PWM)     -----    PB1  OC1A - PCINT1             15
+digital 10 (PWM)    -----    PB2  SS - OC1B - PCINT2        16
+digital 11 (PWM)    -----    PB3  MOSI - OC2A - PCINT13     17
+digital 12          -----    PB4  MISO - PCINT4             18
+digital 13          -----    PB5  SCK - PCINT5              19
+                    -----    AVcc                           20
+Aref                -----    Aref                           21
+                    -----    Gnd                            22
+analog 0            -----    PC0  ADC0 - PCINT8             23
+analog 1            -----    PC1  ADC1 - PCINT9             24
+analog 2            -----    PC2  ADC2 - PCINT10            25
+analog 3            -----    PC3  ADC3 - PCINT11            26
+analog 4            -----    PC4  ADC4 - SDA - PCINT12      27
+analog 5            -----    PC5  ADC5 - SCL - PCINT13      28
+
+
+
+                                           Pinmapping Arduino - R3 Board
+
+
+                                   DC in               USB
+                                                     +----+
+                                   +---+             |    |
+                               +---|   |-------------|    |--------+
+                               |   |   |             |    |        |
+                               |   +---+             +----+        |
+                               |                                   |
+                               |                         | Aref  o |
+                               |                         |  GND  o |
+                               |                         |   13  o |  PB5  SCK - PCINT5          (19)
+                               |                         |   12  o |  PB4  MISO - PCINT4         (18)
+                               | o  res  |             d |   11  o |  PB3  MOSI - OC2A - PCINT13 (17)
+                               | o  3.3V |             i |   10  o |  PB2  SS -  OC1B - PCINT2   (16)
+                               | o  5V   |             g |    9  o |  PB1  OC1A - PCINT1         (15)
+                               | o  GND  | a           i |    8  o |  PB0  PCINT0 - CLKO - ICP1  (14)
+                               | o  GND  | n           t |         |
+                               | o  Uin  | a           a |    7  o |  PD7  PCINT23 - AIN1        (13)
+                               |         | l           l |    6  o |  PD6  PCINT22 - OC0A - AIN0 (12)
+PC0  ADC0 - PCINT8        (23) | o  A0   | o             |    5  o |  PD5  PCINT21 - OC0B - T1   (11)
+PC1  ADC1 - PCINT9        (24) | o  A1   | g             |    4  o |  PD4  PCINT20 - XCK - T0    (6)
+PC2  ADC2 - PCINT10       (25) | o  A2   |               |    3  o |  PD3  PCINT19 - OC2B - INT1 (5)
+PC3  ADC3 - PCINT11       (26) | o  A3   |               |    2  o |  PD2  PCINT18 -INT0         (4)
+PC4  ADC4 - SDA - PCINT12 (27) | o  A4   |               | Tx 1  o |  PD1  TxD - PCINT16         (3)
+PC5  ADC5 - SCL - PCINT13 (28) | o  A5   |               | Rx 0  o |  PD0  RxD - PCINT14         (2)
+                               |                                   |
+                               +-----------------------------------+
+
+
+* Angaben in Klammern sind die Anschlusspins eines "nackten" ATmegaxx8 IC's im 29pol. DIL Gehauese
+
+
+
+                                        Anschlusspins des IC's
+
+
+                                            +-------------+
+                    PC6 - /reset - PCINT14  |  1       28 |  PC5 - ADC5 - SCL - PCINT13
+                       PD0 - PCINT16 - RxD  |  2       27 |  PC4 - ADC4 - SDA - PCINT12
+                       PD1 - PCINT17 - TxD  |  3   A   26 |  PC3 - ADC3 - PCINT11
+                      PD2 - PCINT18 - INT0  |  4   T   25 |  PC2 - ADC2 - PCINT10
+               PD3 - PCINT19 - OC2B - INT1  |  5   m   24 |  PC1 - ADC1 - PCINT9
+                  PD4 - PCINT20 - XCK - T0  |  6   e   23 |  PC0 - ADC0 - PCINT8
+                                       Vcc  |  7   g   22 |  Gnd
+                                       Gnd  |  8   a   21 |  Aref
+              PB6 - PCINT6 - XTAL1 - TOSC1  |  9       20 |  AVcc
+              PB7 - PCINT7 - XTAL2 - TOSC2  | 10       19 |  PB5 - SCK - PCINT5
+                PD5 - PCINT21 -  OC0B - T1  | 11       18 |  PB4 - MISO - PCINT4
+              PD6 - PCINT22 -  OC0A - AIN0  | 12       17 |  PB3 - MOSI - OC2A - PCINT13
+                      PD7 - PCINT23 - AIN1  | 13       16 |  PB2 - SS - OC1B - PCINT2
+                PB0 - PCINT0 - CLKO - ICP1  | 14       15 |  PB1 - OC1A - PCINT1
+                                            +-------------+
+
+
+###########################################################################################################################
+                                                ATTINY2313
+
+                                            Anschlusspins IC
+
+                                            +-------------+
+                              /reset - PA2  |  1       20 |  Vcc
+                                 RxD - PD0  |  2       19 |  PB7 - UCSK - SCL - PCINT7
+                                 TxD - PD1  |  3   A   18 |  PB6 - MISO - DO - PCINT6
+                               XTAL2 - PA1  |  4   T   17 |  PB5 - MOSI - DI - SDA - PCINT5
+                               XTAL1 - PA0  |  5   t   16 |  PB4 - OC1B - PCINT4
+                    CKOUT - XCK - INT0 PD2  |  6   i   15 |  PB3 - OC1A - PCINT3
+                                INT1 - PD3  |  7   n   14 |  PB2 - OC0A - PCINT2
+                                  T0 - PD4  |  8   y   13 |  PB1 - AIN1 - PCINT1
+                           OC0B - T1 - PD5  |  9       12 |  PB0 - AIN0 - PCINT0
+                                       GND  | 10       11 |  PD6 - ICP
+                                            +-------------+
+
+
+###########################################################################################################################
+                                     ISP Programmieradapter Atmel
+
+                                Belegung 10 pol. ISP Steckverbinder
+
+
+                                             V  G  G  G  G
+                                             c  n  n  n  n
+                                             c  d  d  d  d
+                                            ---------------
+                                           | o  o  o  o  o |
+                                           | o  o  o  o  o |
+                                            ---------------
+                                             M  n  /  s  M
+                                             o  c  r  c  i
+                                             s  .  s  k  s
+                                             i     t     o
+
+
+                                   Belegung 6 pol. ISP Steckverbinder
+
+
+
+                                                   M
+                                                V  o  G
+                                                c  s  n
+                                                c  i  d
+                                               ---------
+                                              | o  o  o |
+                                              | o  o  o |
+                                               ---------
+                                                M  S  /
+                                                i  c  r
+                                                s  k  s
+                                                o     t
+
+###########################################################################################################################
+                                 EEPROM 8-pol. 24C16 - 24C64 / 24LC1025
+
+
+                                              +--------+
+                                          A0  | 1    8 |  Vcc
+                                          A1  | 2    7 |  n.c. oder WP *
+                                          A2  | 3    6 |  SCL
+                                         GND  | 4    5 |  SDA
+                                              +--------+
+
+
+                     * manche I2C EEPROMs besitzen keinen Write-Protection Anschluss
+                     WP= 0 : Schreiboperationen verfuegbar
+
+###########################################################################################################################
+                                                        STM8
+
+                                            STM8S103F3P6 Pinbelegung (TSSOP20)
+
+                                                  +-------------+
+            PD4 - UART1_CK - TIM2_CH1 - BEEP(HS)  |  1       20 | PD3 - HS - AIN4 - TIM2_CH2 - ADC_ETR
+                      PD5 - UART1_TX - AIN5 - HS  |  2   S   19 | PD2 - HS - AIN3 - TIM2_CH3
+                      PD6 - UART1_RX - AIN6 - HS  |  3   T   18 | PD1 - HS - SWIM ( ST-Link )
+                      NRST- ( auch fuer ST-Link)  |  4   M   17 | PC7 - HS - SPI_MISO - TIM1_CH2
+                             PA1 - OSCIN (Quarz)  |  5   8   16 | PC6 - HS - SPI_MOSI - TIM1_CH1
+                            PA2 - OSCOUT (Quarz)  |  6   S   15 | PC5 - HS - SPI_SCK - TIM2_CH1
+                                       gnd - Vss  |  7   1   14 | PC4 - HS - TIM1_CH4 - CLK_CC0 - AIN2 - TIM1_CH2N
+                        Vcap - ( 1uF gegen GND )  |  8   0   13 | PC3 - HS - TIM1_CH3 - TLI - TIM1_CH1N
+                        Vdd - ( 100n gegen GND )  |  9   3   12 | PB4 - T - I2C_SCL - ADC_ETR
+                     P3 - SPI_NSS - TIM2_CH3(HS)  | 10       11 | PB5 - T - I2C_SDA - TIM1_BKIN
+                                                  +-------------+
+
+
+                                             STM8 Minimumboard (China)
+
+                                Hinweis: VCAP ist NICHT auf dem Board aufgelegt !!!
+
+                                                     3  S     N
+                                                     .  W  G  R
+                                                     3  I  N  S
+                                                     V  M  D  T
+
+                                                     |  |  |  |
+                                                     |  |  |  |
+                                                  +--------------+
+                   PB5 - T - I2C_SDA - TIM1_BKIN  | b5        a3 |  PA3 - SPI_NSS - TIM2_CH3(HS)
+                     PB4 - T - I2C_SCL - ADC_ETR  | b4      3,3V |  3,3V Ausgangsspannung AMS1117 3.3
+           PC3 - HS - TIM1_CH3 - TLI - TIM1_CH1N  | c3        5V |  Uin
+PC4 - HS - TIM1_CH4 - CLK_CC0 - AIN2 - TIM1_CH2N  | c4       gnd |  Vss
+                   PC5 - HS - SPI_SCK - TIM2_CH1  | c5        a2 |  PA2 - OSCOUT (Quarz)
+                  PC6 - HS - SPI_MOSI - TIM1_CH1  | c6        a1 |  PA1 - OSCIN (Quarz)
+                  PC7 - HS - SPI_MISO - TIM1_CH2  | c7       rst |  NRST ( auch fuer ST-Link)
+                     PD1 - HS - SWIM ( ST-Link )  | d1        d6 |  PD6 - UART1_RX - AIN6 - HS
+                      PD2 - HS - AIN3 - TIM2_CH3  | d2        d5 |  PD5 - UART1_TX - AIN5 - HS
+            PD3 - HS - AIN4 - TIM2_CH2 - ADC_ETR  | d3        d4 |  PD4 - UART1_CK - TIM2_CH1 - BEEP(HS)
+                                                  +--------------+
+
+
+                              Pinmapping STM8S103F3P6  auf R3 Arduino Board aufgeloetet
+                                               ( Bootloader-Version )
+
+                                           STLINK v2            USB
+                                                              +----+
+                                            +----+            |    |
+                                        +---|    |------------|    |--------+
+                                        |   |    |            |    |        |
+                                        |   +----+            +----+        |
+                                        |                                   |
+                                        |                            SCA  o |
+                                        |                            SDA  o |
+                                        |                         | Aref  o |
+                                        |                         |  GND  o |
+                                        |                         |   13  o |  PC5  /  SPI.CLK
+                                        |                         |   12  o |  PC7  /  SPI.MISO
+                                        | o  res  |             d |   11  o |  PC6  /  SPI.MOSI
+                                        | o  3.3V |             i |   10  o |  PA3  /  SPI.SS
+                                        | o  5V   |             g |    9  o |
+                                        | o  GND  | a           i |    8  o |
+                                        | o  GND  | n           t |         |
+                                        | o  Uin  | a           a |    7  o |  PD4
+                                        |         | l           l |    6  o |  PD3
+                                        | o  A0   | o             |    5  o |  PD2
+                                        | o  A1   | g             |    4  o |  PD1
+                                   PA1  | o  A2   |               |    3  o |  PC3
+                                   PA2  | o  A3   |               |    2  o |  PC4
+                        I2C.SDA  / PB5  | o  A4   |               |    1  o |  n.c.
+                        I2C.SCL  / PB4  | o  A5   |               |    0  o |  n.c.
+                                        |                                   |
+                                        +-----------------------------------+
+
+
+
+                                           R3-Board              GPIO-Pins
+                                         ---------------------------------
+
+                                         "digital" Pins
+
+                                                0           ----
+                                                1           ----
+                                                2           ----   PC4
+                                                3           ----   PC3
+                                                4           ----   PD1
+                                                5           ----   PD2
+                                                6           ----   PD3
+                                                7           ----   PD4
+
+                                                8           ----
+                                                9           ----
+                                               10           ----   PA3 (SPI.SS)
+                                               11           ----   PC6 (SPI.MOSI)
+                                               12           ----   PC7 (SPI.MISO)
+                                               13           ----   PC5 (SPI.CLK)
+
+                                          "analoge Pins"
+
+                                                2           ----   PA1
+                                                3           ----   PA2
+                                                4           ----   PB5 (I2C.sda)
+                                                5           ----   PB4 (I2C.scl)
+
+
+###########################################################################################################################
+                                                     STM32F030F4P6
+
+                                         Pinbelegung des blanken IC (TSSOP 20)
+
+                                                  +-------------+
+                                           boot0  |  1       20 | PA14 - SWCLK - USART1_TX
+                         PF0 - osc_in - I2C1_SDA  |  2   S   19 | PA13 - SWDIO - IR_OUT
+                        PF1 - osc_out - I2C1_SCL  |  3   T   18 | PA10 - USART1_RX - TIM1_CH3 - TIM17_BKIN - I2C1_SDA
+                             NRST - (active low)  |  4   M   17 | PA9 - USART1_TX - TIM1_CH2 - I2C1_SCL
+          Vdda - analog power supply (max. 3.6V)  |  5   3   16 | Vdd - power supply (max. 3.6V)
+  PA0 - USART1_CTS - ADC_in0 - RTC_TAMP2 - WKUP1  |  6   2   15 | Vss - GND
+                      PA1 - USART1_RTS - ADC_in1  |  7   F   14 | PB1 - TIM3_CH4 - TIM14_CH1 - TIM1_CH3N - ADC_in9
+                       PA2 - USART1_TX - ADC_in2  |  8   0   13 | PA7 - SPI1_MOSI - TIM3_CH2 - TIM14_CH1 - TIM1_CH1N - EVENTOUT - ADC_in7
+                       PA3 - USART1_RX - ADC_in3  |  9   3   12 | PA6 - SPI1_MISO - TIM3_CH1 - TIM1_BKIN - TIM16_CH1 - EVENTOUT - ADC_in6
+PA4 - SPI1_NSS - USART1_CK - TIM14_CH1 - ADC_in4  | 10   0   11 | PA5 - SPI1_SCK - ADC_in5
+                                                  +-------------+
+
+
+
+                         Pinmapping STM32F030F4P6 auf R3 Arduino Board aufgeloetet (Lochraster)
+
+                                           STLINK v2            USB
+                                                              +----+
+                                            +----+            |    |
+                                        +---|    |------------|    |--------+
+                                        |   |    |            |    |        |
+                                        |   +----+            +----+        |
+                                        |                                   |
+                                        |                            SCA  o |  PB15  I2C1_SCA
+                                        |                            SDA  o |  PB14  I2C1_SDA
+                                        |                         | Aref  o |
+                                        |                         |  GND  o |
+                                        |                         |   13  o |
+                                        |                         |   12  o |
+                                        | o  res  |             d |   11  o |
+                                        | o  3.3V |             i |   10  o |  PA10  I2C_SDA
+                                        | o  5V   |             g |    9  o |  PA9   I2C_SCL
+                                        | o  GND  | a           i |    8  o |  PB1
+                                        | o  GND  | n           t |         |
+                                        | o  Uin  | a           a |    7  o |  PA7
+                                        |         | l           l |    6  o |  PA6
+                                   PA0  | o  A0   | o             |    5  o |  PA5
+                                   PA1  | o  A1   | g             |    4  o |  PA4
+                                   PA2  | o  A2   |               | Rx 3  o |  PA3
+                                   PA3  | o  A3   |               | Tx 2  o |  PA2
+                                   PA4  | o  A4   |               |    1  o |  PA1
+                                   PA5  | o  A5   |               |    0  o |  PA0
+                                        |                                   |
+                                        +-----------------------------------+
+
+
+
+                             Pinmapping STM32F030 R3 v0.b Arduinoformfaktor (blaue Platine)
+
+
+                                                             _      USB
+                                                            | |    +---+
+                                                           +---+   |   |
+                                        +------------------|   |---|   |----+
+                                        |                  +---+   +---+    |
+                                        |                  Reset            |
+                                        |                                   |
+                                        |                         | Aref  o |
+                                        |                         |  GND  o |
+                                        |                         |   13  o |  PA5  SCK - ADC_IN5         (11)
+                                        |                         |   12  o |  PA6  MISO - ADC_IN6        (12)
+                                        | o  res  |             d |   11  o |  PA7  MOSI - ADC_IN7        (13)
+                                        | o  3.3V |             i |   10  o |  PA4  NSS - ADC_IN4         (10)
+                                        | o  5V   |             g |    9  o |  n.c.
+                                        | o  GND  | a           i |    8  o |  n.c.
+                                        | o  GND  | n           t |         |
+                                        | o  n.c. | a           a |    7  o |  PB1  TIM3_CH4 - ADC_IN9    (14)
+                                        |         | l           l |    6  o |  PA3  USART1_RX - ADC_IN3   (9)
+         PA14  USART1_TX - SWCLK   (20) | o  A0   | o             |    5  o |  n.c.
+         PA13  IR_OUT - SWDIO      (19) | o  A1   |               |    4  o |  PF1  OSC-OUT               (3)
+         PA2   USART1_TX - ADC_IN2  (8) | o  A2   |               |    3  o |  PF0  OSC-IN                (2)
+         PA0   WKUP1 - ADC_IN0      (6) | o  A3   |               |    2  o |  n.c.
+         PA1   EVENTOUT - ADC_IN1   (7) | o  A4   |               | Tx 1  o |  n.c.
+                                   n.c. | o  A5   |               | Rx 0  o |  n.c.
+                                        |                                   |
+                                        +-----------------------------------+
+
+
+
+###########################################################################################################################
+                                                 STM32F103C8T6
+
+                                      STM32F103C8T6 auf R3 Arduino-Board
+
+
+                                        STLINK v2            USB
+                                                           +----+
+                                         +----+            |    |
+                                     +---|    |------------|    |--------+
+                                     |   |    |            |    |        |
+                                     |   +----+            +----+        |
+                                     |                                   |
+                                     |                            SCA  o |  PB15  I2C1_SCA
+                                     |                            SDA  o |  PB14  I2C1_SDA
+                                     |                         | Aref  o |
+                                     |                         |  GND  o |
+                                     |                         |   13  o |  PA5   SPI_SCK
+                                     |                         |   12  o |  PA6   SPI1_MISO
+                                     | o  res  |             d |   11  o |  PA7   SPI1_MOSI
+                                     | o  3.3V |             i |   10  o |  PA4   SPI1_NSS
+                                     | o  5V   |             g |    9  o |  PB13
+                                     | o  GND  | a           i |    8  o |  PB12
+                                     | o  GND  | n           t |         |
+                                     | o  Uin  | a           a |    7  o |  PB11
+                                     |         | l           l |    6  o |  PB10
+                                PA0  | o  A0   | o             |    5  o |  PB9
+                                PA1  | o  A1   | g             |    4  o |  PB8
+                                PA2  | o  A2   |               |    3  o |  PB7
+                                PA3  | o  A3   |               |    2  o |  PB6
+                                PB0  | o  A4   |               | Tx 1  o |  PB5
+                                PB1  | o  A5   |               | Rx 0  o |  PA12
+                                     |                                   |
+
+                                     +-----------------------------------+
+
+###########################################################################################################################
+                                               maple mini  STM32F10RCBT6
+
+
+                                               Pinbelegung maple mini modul
+
+
+                                               Onboard LED     : D33 = PB1
+                                               Onboard Button  : D32 = PB8
+
+                                        GPIOA           GPIOB           GPIOC
+
+                                        PA0:  D11       PB0:  D3        PC0:  -
+                                        PA1:  D10       PB1:  D33       PC1:  -
+                                        PA2:  D9        PB2:  D2        PC2:  -
+                                        PA3:  D8        PB3:  D19       PC3:  -
+                                        PA4:  D7        PB4:  D18       PC4:  -
+                                        PA5:  D6        PB5:  D17       PC5:  -
+                                        PA6:  D5        PB6:  D16       PC6:  -
+                                        PA7:  D4        PB7:  D15       PC7:  -
+                                        PA8:  D27       PB8:  D32       PC8:  -
+                                        PA9:  D26       PB9:  -         PC9:  -
+                                        PA10: D25       PB10: D1        PC10: -
+                                        PA11: D24       PB11: D0        PC11: -
+                                        PA12: D23       PB12: D31       PC12: -
+                                        PA13: D22       PB13: D30       PC13: D14
+                                        PA14: D21       PB14: D29       PC14: D13
+                                        PA15: D20       PB15: D28       PC15: D12
+
+
+
+###########################################################################################################################
+                                                     AT89S52
+
+                                         MCS51 AT89S52 auf R3 Arduino Board
+
+
+                                           STLINK v2            USB
+                                                              +----+
+                                            +----+            |    |
+                                        +---|    |------------|    |--------+
+                                        |   |    |            |    |        |
+                                        |   +----+            +----+        |
+                                        |                                   |
+                                        |                            SCA  o |  P0.7
+                                        |                            SDA  o |  P0.6
+                                        |                         | Aref  o |
+                                        |                         |  GND  o |
+                                        |                         |   13  o |  P0.5
+                                        |                         |   12  o |  P0.4
+                                        | o  res  |             d |   11  o |  P0.3
+                                  n.c.  | o  3.3V |             i |   10  o |  P0.2
+                                        | o  5V   |             g |    9  o |  P0.1
+                                        | o  GND  | a           i |    8  o |  P0.0
+                                        | o  GND  | n           t |         |
+                                        | o  Uin  | a           a |    7  o |  P3.7
+                                        |         | l           l |    6  o |  P3.6
+                                  P2.0  | o  A0   | o             |    5  o |  P3.5
+                                  P2.1  | o  A1   | g             |    4  o |  P3.4
+                                  P2.2  | o  A2   |               | Rx 3  o |  P3.3
+                                  P2.3  | o  A3   |               | Tx 2  o |  P3.2
+                                  P2.4  | o  A4   |               |    1  o |  P3.1
+                                  P2.5  | o  A5   |               |    0  o |  P3.0
+                                        |                                   |
+                                        +-----------------------------------+
+
+
+###########################################################################################################################
+                          4 Digit 7 Segmentanzeige (China "Tube Module") mit 2 Stck. 74HC595
+
+                               Pinbelegung:
+
+                               4 Bit LED Digital Tube Module
+                               -------------------------------------------------------
+
+                                   (shift-clock)   Sclk   --------------------
+                                   (strobe-clock)  Rclk   --------------------
+                                   (ser. data in)  Dio    --------------------
+                                   (+Ub)           Vcc
+                                                   Gnd
+
+
+                               Anzeigenposition 0 ist das rechte Segment des Moduls
+
+                                        +-----------------------------+
+                                        |  POS3   POS2   POS1   POS0  |
+                                Vcc  o--|   --     --     --     --   |
+                                Sclk o--|  |  |   |  |   |  |   |  |  |
+                                Rclk o--|  |  |   |  |   |  |   |  |  |
+                                Dio  o--|   -- o   -- o   -- o   -- o |
+                                GND  o--|                             |
+                                        |   4-Bit LED Digital Tube    |
+                                        +-----------------------------+
+
+                               Segmentbelegung der Anzeige:
+
+                                   a
+                                  ---
+                               f | g | b            Segment | dp |  g  |  f  |  e  |  d  |  c  |  b  |  a  |
+                                  ---               --------------------------------------------------------
+                               e |   | c            Bit-Nr. |  7 |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
+                                  ---
+                                   d
+
+                               Segmente leuchten bei einer logischen 0 (gemeinsame Kathode) !!!
+
+
+###########################################################################################################################
+                                4 Digit 7 Segmentanzeige "Clock Module"  mit TM1637
+
+
+                       TM1637 Modul       STM8S103F
+                           SCL   ---------- PC6
+                           SDA   ---------- PC5
+
+                       Anzeigenposition 0 ist das linke Segment des Moduls
+
+                            +---------------------------+
+                            |  POS0  POS1   POS2  POS3  |
+                            |  +--+  +--+   +--+  +--+  | --o  GND
+                            |  |  |  |  | o |  |  |  |  | --o  +5V
+                            |  |  |  |  | o |  |  |  |  | --o  DIO
+                            |  +--+  +--+   +--+  +--+  | --o  CLK
+                            |      4-Digit Display      |
+                            +---------------------------+
+
+                       Segmentbelegung der Anzeige:
+
+                           a
+                          ---
+                       f | g | b            Segment |  a  |  b  |  c  |  d  |  e  |  f  |  g  | Doppelpunkt (nur fuer POS1) |
+                          ---               ---------------------------------------------------------------------------------
+                       e |   | c            Bit-Nr. |  0  |  1  |  2  |  3  |  4  |  5  |  6  |              7              |
+                          ---
+                           d
+
+
+                       Bit 7 der 7-Segmentanzeige POS1 ist der Doppelpunkt
+
+
+###########################################################################################################################
+
+                                               S-C-H-A-L-T-U-N-G-E-N
+
+###########################################################################################################################
+
+
+
+###########################################################################################################################
+                                                 I2C Levelshifter:
+
+ ermoeglicht das Anbinden von 5V I2C Einheiten an einen 3,3V Bus  oder eine 3,3V Einheit an einen 5V Bus. Im Falle des
+ STM8S103F3  betraegt die Busspannung 3,3V, das heisst: die 3,3V Anschluesse  sind am Mikrocontroller anzubringen. 3,3V
+ Einheiten sind direkt am Controller anzuschliessen, 5V Einheiten an den 5V Anschluss des Levelshifters
+
+                          - konvertiert bidirektional 3,3V zu 5V Pegel des I2C Busses
+                          - Schaltung wird 2 mal benoetigt, je einen fuer SDA und SCL
+
+
+                                          +5V                  +3,3V   +3,3V
+                                          ^                     ^       ^
+                                          |                     |       |
+                                         +-+                   +-+      |
+                                         | |   2,2k            | |      |
+                                         | |                   | |      |
+                                         +-+                   +-+      |
+                                          |       BS170         |       |
+                         I2C  (5V)   o----o---------    --------o-------------o  I2C - Signal (3,3V)
+                                                 D |   v  S             |
+                                                   - - -                |
+                                                    ---                 |
+                                                       | G              |
+                                                       |                |
+                                                       -----------------
+
+
+
+###########################################################################################################################
+                                  STM8S103F3P6 verbunden mit CH340G (USB2RS232)
+
+                    +---------------------------------------+----------------+
+                    |                                       |                |
+       +--------+   |       +---------------------+         |     +----------------------+ 3,3V
+       | U  +5V | --+       |                     | +3,3V         |         5V           |---------
+       | S   D+ | ----------|  5               16 |---------------| 3,3V                 | SWIM
+       | B   D- | ----------|  6    CH340G        | TxD           |                      |---------
+       |    GND |           |                   2 |---------------| D6   STM8S103F3P6    | GND        ==> ST-Link v2
+       +--------+ --+   +---|  4                3 |---------------| D5     Board         |---------
+                    |   |   |    7       8        | RxD           |                      | NRST
+                    |  ===  +---------------------+         |     |         GND          |---------
+                    |   |100n    |       |    |             |     +----------------------+
+                   --- ---       +--|#|--+    |          +------+           |
+                                 |       |    |     100n |     +| 47uF      |
+                                 | 12MHz |    |         ===    ===          |
+                                ===     ===   |          |      |           |
+                                 |       |    |          |      |           |
+                                ---     ---  ---        ---    ---         ---

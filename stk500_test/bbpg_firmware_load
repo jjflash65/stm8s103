@@ -1,0 +1,25 @@
+#!/bin/sh
+hfile="$1"
+if [ -z "$1" -o "$1" = "-h" ] ;then
+	echo "bbpg_firmware_load -- set fuses and load firmware for avrusb500"
+	echo "USAGE: bbpg_firmware_load [-h] File.hex"
+	exit 0
+fi
+PATH="${PATH}:."
+export PATH
+echo "OK: erase chip..."
+set -x
+uisp_bbpg --erase  -dprog=bbpg -v=3
+set +x
+echo "OK: load and verify..."
+# the dt_sck option is needed for USB2.0 to slow down the speed. This
+# is because the fifo in the ft232 is not faster. If you remove the option
+# then you increase the chance for bit errors
+set -x
+uisp_bbpg --upload if="$hfile" -dprog=bbpg -v=3 --hash=8 --verify -dno-poll -dt_sck=1000
+set +x
+echo "OK: program lower fuse to external crystal ..."
+set -x
+uisp_bbpg -dprog=bbpg --wr_fuse_l=0xee
+set +x
+
